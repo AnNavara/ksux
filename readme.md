@@ -1,5 +1,6 @@
 Ksux page
 =========
 
-Some page with some content
-wow very useful description
+Some page with some content.
+
+*Wow* **very** useful description.
