@@ -1,0 +1,125 @@
+.content{
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  border: 12px solid #fff;
+  box-shadow: inset 0px 0px 0px 2px $gray-lighter;
+  background-color: #fff;
+
+  &--small{
+    height: 19.43em;
+  }
+
+  &--tall{
+    height: 41.07em;
+  }
+
+  &--giant{
+    > .content__header{
+        top: 65%;
+    }
+  }
+
+  &:hover{
+    > .content__header{
+        transform: translateY(0);
+        color: $gray-dark;
+        opacity: 1;
+        transition: transform .6s ease-out,
+                    color .5s linear .1s,
+                    opacity .3s linear;
+    }
+
+    .content__img{
+      transform: translateY(-28px);
+      opacity: 0;
+      transition: transform .6s ease-out,
+                  opacity .6s ease-out;
+    }
+
+    .content__img--colored{
+      opacity: 1;
+      transform: opacity .6s ease-in-out;
+    }
+  }
+
+  &:not(:hover){
+    > .content__header{
+        color: #fff;
+        opacity: 0;
+        transform: translateY(28px) rotateX(0.0001deg);
+        transition: transform .4s ease-in,
+                    color .4s linear,
+                    opacity .1s linear .35s;
+    }
+  }
+
+  &__header{
+    margin: 0;
+    margin-left: 3px;
+    position: absolute;
+    width: 97%;
+    top: 57%;
+    z-index: 5;
+    font-family: $font-family-serif;
+    font-size: $font-size-h3;
+    line-height: 1;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.08em;
+    color: #fff;
+    opacity: 0;
+    text-transform: uppercase;
+    transform: translateY(28px);
+    // transition: transform .4s ease-in,
+    //             color .3s linear,
+    //             opacity .3s linear .1s;
+  }
+
+  &__descr{
+    position: absolute;
+    left: 28px;
+    bottom: 18px;
+    z-index: 15;
+
+    >span{
+      margin-bottom: 10px;
+      display: block;
+      font-size: $font-size-small;
+      line-height: $line-height-base;
+      color: $gray-lighten;
+    }
+  }
+
+  &__container{
+    position: absolute;
+    top: -20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font: 0/0 a;
+
+    &:before{
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+  }
+
+  &__img{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform .4s ease-in,
+                opacity .4s ease-in .1s;
+
+    &--colored{
+      opacity: 0;
+    }
+  }
+}
