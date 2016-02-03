@@ -1,4 +1,9 @@
 .page-header{
-  padding-top: 90px;
-  padding-bottom: 11px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+
+  @media (min-width: $screen-xs-max){
+    padding-top: 90px;
+    padding-bottom: 11px;
+  }
 }

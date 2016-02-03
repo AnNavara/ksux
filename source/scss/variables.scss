@@ -15,6 +15,7 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             #7a7a7a !default;
 $gray-lighten:           #bebebe;
 $gray-lighter:           #ebebeb !default;
+$gray-lightest:          #f1f1f1;
 
 $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
 $brand-success:         #5cb85c !default;
@@ -46,7 +47,7 @@ $link-hover-decoration: underline !default;
 //## Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif:  "PT Sans", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       "PT Serif", Georgia, "Times New Roman", Times, serif !default;
+$font-family-serif:       "PT Serif", "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
