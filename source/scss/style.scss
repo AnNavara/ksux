@@ -1,4 +1,6 @@
 @import "variables.scss";
+@import "_font-face.scss";
+
 @import "components/bootstrap/_normalize.scss";
 
 
@@ -31,3 +33,8 @@
 @import "components/page-nav.scss";
 @import "components/page-footer.scss";
 @import "components/content.scss";
+
+//HACK To add charset to style file
+.this-shit-is-meaningles-why-would-you-broke-charset-declaration::after{
+  content: "👻";
+}

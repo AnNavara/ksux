@@ -9,7 +9,7 @@ h1{
   text-align: center;
   letter-spacing: 0.08em;
 
-  @media (min-width: $screen-xs-max){
+  @media (min-width: $screen-sm-min){
     margin: 0 0 50px 0;
   }
 }
