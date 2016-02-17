@@ -1,0 +1,46 @@
+.blog{
+  padding-top: 37px;
+  background-color: #fff;
+  overflow: hidden; //fixes margin outflow
+
+  &__section{
+    padding-bottom: 150px;
+    margin-bottom: 120px;
+    box-shadow: 0 14px 0 -12px $gray-lighter;
+    @include clearfix();
+
+    &--dark{
+      padding-top: 90px;
+      padding-bottom: 110px;
+      text-align: center;
+      background-color: $gray-darker;
+      box-shadow: none;
+      @include clearfix();
+    }
+
+    &--no-margin{
+      margin-bottom: 0;
+    }
+
+    &--no-padding{
+      padding-bottom: 0;
+    }
+
+    &--no-shadow{
+      box-shadow: none;
+    }
+  }
+
+  &__header{
+    margin-bottom: 119px;
+    padding-bottom: 69px;
+    box-shadow: 0 14px 0 -12px $gray-lighter;
+  }
+
+  &__heading{
+    margin-bottom: 0;
+    font-size: 66px;
+    line-height: 1.1;
+    text-align: left;
+  }
+}

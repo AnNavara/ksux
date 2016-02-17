@@ -4,35 +4,37 @@
 @import "components/bootstrap/_normalize.scss";
 
 
-/*!##############################################################//
-//                                                               //
-//   ####   ###   ###  #####  ###  #####  ####    ###   ####     //
-//   #   # #   # #   #   #   #       #    #   #  #   #  #   #    //
-//   ####  #   # #   #   #   ####    #    ####   #####  ####     //
-//   #   # #   # #   #   #      #    #    #  #   #   #  #        //
-//   ####   ###   ###    #   ###     #    #   #  #   #  #        //
-//                                                               //
-//##############################################################!*/
+//
+// Bootsrap styles
+// v3
 
 @import "components/bootstrap/_mixins.scss";
 @import "components/bootstrap/_scaffolding.scss";
 @import "components/bootstrap/_grid.scss";
 
-/*!#############################################//
-//                                              //
-//   ###   #    #   ###  #####   ###   ##   ##  //
-//  #   #  #    #  #       #    #   #  # # # #  //
-//  #      #    #  ####    #    #   #  #  #  #  //
-//  #   #  #    #     #    #    #   #  #     #  //
-//   ###    ####   ###     #     ###   #     #  //
-//                                              //
-!##############################################!*/
+//
+// Custom styles
+//
 
+@import "components/grid-helper.scss";
 @import "components/typography.scss";
 @import "components/page-header.scss";
 @import "components/page-nav.scss";
 @import "components/page-footer.scss";
 @import "components/content.scss";
+
+//
+// Blog page styles
+//
+
+@import "components/blog.scss";
+@import "components/img.scss";
+@import "components/list.scss";
+@import "components/pagination.scss";
+@import "components/breadcrumbs.scss";
+@import "components/gallery.scss";
+@import "components/discuss.scss";
+@import "components/video.scss";
 
 //HACK To add charset to style file
 .this-shit-is-meaningles-why-would-you-broke-charset-declaration::after{

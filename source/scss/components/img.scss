@@ -1,0 +1,110 @@
+.img{
+  width: 100%;
+  height: auto;
+
+  &-link{
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+
+    &::before{
+      position: absolute;
+      content: "";
+      z-index: 15;
+      top: 39%;
+      left: 45%;
+      width: 111px;
+      height: 111px;
+      background-image: url("../img/icon-magnifier.png");
+      opacity: 0;
+      transition: opacity 0.2s linear;
+    }
+
+    &::after{
+      position: absolute;
+      content: "";
+      z-index: 10;
+      top: 45%;
+      left: 48%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+    }
+
+    &:hover::before{
+      opacity: 1;
+      transition: opacity 0.3s linear;
+    }
+
+    &:not(:hover)::before{
+      opacity: 0;
+      transition: opacity 0.2s linear;
+    }
+
+    &:hover::after{
+      border: 30px solid rgba(205, 205, 205, 0.3);
+      transform: scale(15,15);
+      transition: transform 0.4s ease-in;
+    }
+
+    &:not(:hover)::after{
+      border: 30px solid rgba(205, 205, 205, 0.3);
+      transform: scale(1,1);
+      opacity: 0;
+      transition: transform 0.3s ease-out,
+                  opacity 0.3s linear;
+    }
+  }
+
+
+  //
+  // hidden image
+  // with growth
+
+  &-move{
+    display: block;
+    margin-top: 105px;
+    max-height: 300px;
+    box-shadow: 0 0 40px 1px rgba(36, 41, 46, 0.12);
+    overflow: hidden;
+    backface-visibility: hidden;
+
+    &:hover{
+      max-height: 320px;
+      margin-bottom: -20px;
+      transform: translateY(-20px);
+      transition: transform 0.4s ease-out,
+                  max-height 0.4s ease-out,
+                  margin-bottom 0.4s ease-out;
+    }
+
+    &:not(:hover){
+      max-height: 300px;
+      margin-bottom: 0;
+      transform: translateY(0);
+      transition: transform 0.2s ease-out,
+                  max-height 0.2s ease-out,
+                  margin-bottom 0.2s ease-out;
+    }
+
+    &--show{
+      max-height: none;
+      transform: translateY(0);
+      transition: max-height 0.4s ease;
+    }
+
+    &--show:hover{
+      max-height: none;
+      margin-bottom: 0;
+      transform: translateY(0);
+    }
+
+    &--show:not(:hover){
+      max-height: none;
+      transition: max-height 0.4s ease;
+    }
+  }
+}

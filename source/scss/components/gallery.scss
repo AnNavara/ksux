@@ -1,0 +1,21 @@
+.gallery{
+  @include clearfix;
+
+  &__item{
+    float: left;
+
+    &--med{
+      width: 572px;
+    }
+
+    &--small{
+      width: 287px;
+    }
+  }
+
+  &__img{
+    min-width: 100%;
+    height: 100%;
+    //forces img allways be size of container
+  }
+}

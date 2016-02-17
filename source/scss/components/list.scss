@@ -1,0 +1,22 @@
+.list{
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+  color: #fff;
+  list-style: none;
+
+  &__item{
+    position: relative;
+    margin-bottom: 20px;
+    font-family: $font-family-serif;
+    font-size: $font-size-large;
+    line-height: $line-height-base;
+
+    &::before{
+      position: absolute;
+      content: "—";
+      left: -30px;
+      top: -1px;
+    }
+  }
+}

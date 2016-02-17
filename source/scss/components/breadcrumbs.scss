@@ -1,0 +1,30 @@
+.breadcrumbs{
+  display: block;
+  margin-bottom: 5px;
+
+  &__link{
+    position: relative;
+    padding: 5px 0;
+    font-family: $font-family-base;
+    font-size: $font-size-large;
+    line-height: 1;
+    color: $gray-lighten;
+    display: inline-block;
+    margin-right: 24px;
+
+    &::after{
+      position: absolute;
+      content: "";
+      top: 11px;
+      right: -16px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $gray-lighten;
+    }
+
+    &:last-child::after{
+      display: none;
+    }
+  }
+}

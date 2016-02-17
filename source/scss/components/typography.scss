@@ -15,30 +15,30 @@ h1{
 }
 
 h2{
-  margin: 0 0 1em 0;
+  margin: 0 0 1.5em 0;
   font-family: $font-family-serif;
   font-size: $font-size-h2;
-  line-height: $line-height-computed;
+  line-height: $line-height-base;
   color: $gray-dark;
   font-weight: normal;
-  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  letter-spacing: 0.008em;
 }
 
 h3{
-  margin: 0 0 1em 0;
+  margin: 0 0 1.4em 0;
   font-family: $font-family-serif;
-  font-size: $font-size-h3;
-  line-height: $line-height-computed;
+  font-size: $font-size-h3 ;
+  line-height: $line-height-base;
   color: $gray-dark;
   font-weight: normal;
-  letter-spacing: 0.08em;
 }
 
 h4{
   margin: 0 0 1em 0;
   font-family: $font-family-serif;
   font-size: $font-size-h4;
-  line-height: $line-height-computed;
+  line-height: $line-height-base;
   color: $gray-dark;
   font-weight: normal;
   letter-spacing: 0.08em;
@@ -48,7 +48,7 @@ h5{
   margin: 0 0 1em 0;
   font-family: $font-family-serif;
   font-size: $font-size-h5;
-  line-height: $line-height-computed;
+  line-height: $line-height-base;
   color: $gray-dark;
   font-weight: normal;
   letter-spacing: 0.08em;
@@ -58,18 +58,31 @@ h6{
   margin: 0 0 1em 0;
   font-family: $font-family-serif;
   font-size: $font-size-h6;
-  line-height: $line-height-computed;
+  line-height: $line-height-base;
   color: $gray-dark;
   font-weight: normal;
   letter-spacing: 0.08em;
 }
 
 p{
-  margin: 0 0 1em 0;
-  font-family: $font-family-sans-serif;
-  font-size: $font-size-base;
-  line-height: $line-height-computed;
+  margin: 0 0 1.15em 0;
+  font-family: $font-family-serif;
+  font-size: $font-size-large;
+  line-height: $line-height-big;
   color: $gray-dark;
   font-weight: normal;
-  letter-spacing: 0.001em;
+}
+
+a{
+  color: $gray-light;
+
+  &:hover,
+  &:focus{
+    color: $gray-dark;
+    text-decoration: none;
+  }
+}
+
+.lighten{
+  color: #fff;
 }

@@ -1,0 +1,27 @@
+.center-block{
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $screen-sm-min){
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: $screen-md-min){
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.no-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-margin{
+  margin-left: 0;
+  margin-right: 0;
+}
