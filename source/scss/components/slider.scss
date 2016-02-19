@@ -1,0 +1,81 @@
+.slider{
+  height: 100%;
+  min-height: 574px;
+  background-color: $gray-lightest;
+  overflow: hidden;
+  box-shadow: 0 14px 0 -12px $gray-lightest;
+
+  @media (min-width: $screen-sm-min){
+    box-shadow: none;
+  }
+
+  &__item{
+    box-shadow: 0 100px 0 0 rgba(36, 41, 46, 0.09);
+    // HACK
+    // to make shadow of __content work properly with small images
+    // e.g. no whitey space of no shadow
+  }
+
+  &__content{
+    margin: 0 auto;
+    max-width: 400px;
+    height: 474px;
+    box-shadow: 0 -10px 40px 10px rgba(36, 41, 46, 0.15);
+
+    @media (min-width: $screen-lg-min) {
+      max-width: 454px;
+    }
+  }
+
+  &__pagination{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__prev{
+    display: inline-block;
+    content: "";
+    width: 27px;
+    height: 21px;
+    font-size: 0;
+    background-image: url("../img/icon-arrow-left.png");
+    vertical-align: middle;
+    transition: opacity 0.3s linear;
+
+    &:focus{
+      outline: none;
+    }
+
+    &--last{
+      opacity: 0.3;
+    }
+  }
+
+  &__next{
+    display: inline-block;
+    content: "";
+    width: 27px;
+    height: 21px;
+    font-size: 0;
+    background-image: url("../img/icon-arrow-right.png");
+    vertical-align: middle;
+    transition: opacity 0.3s linear;
+
+    &:focus{
+      outline: none;
+    }
+
+    &--last{
+      opacity: 0.3;
+    }
+  }
+
+  &__counter{
+    display: inline-block;
+    width: 90px;
+    font-size: $font-size-large;
+    color: $gray-font-9a;
+    vertical-align: top;
+  }
+}

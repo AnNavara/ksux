@@ -6,7 +6,7 @@
   &__section{
     padding-bottom: 150px;
     margin-bottom: 120px;
-    box-shadow: 0 14px 0 -12px $gray-lighter;
+    box-shadow: 0 14px 0 -12px $gray-lightest;
     @include clearfix();
 
     &--dark{
@@ -34,7 +34,7 @@
   &__header{
     margin-bottom: 119px;
     padding-bottom: 69px;
-    box-shadow: 0 14px 0 -12px $gray-lighter;
+    box-shadow: 0 14px 0 -12px $gray-lightest;
   }
 
   &__heading{

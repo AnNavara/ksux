@@ -2,6 +2,11 @@
   width: 100%;
   height: auto;
 
+  &--space{
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
   &-link{
     display: block;
     margin-top: 50px;
@@ -71,6 +76,7 @@
     box-shadow: 0 0 40px 1px rgba(36, 41, 46, 0.12);
     overflow: hidden;
     backface-visibility: hidden;
+    outline: none;
 
     &:hover{
       max-height: 320px;

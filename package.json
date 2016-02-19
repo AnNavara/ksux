@@ -28,6 +28,6 @@
     "postcss-zindex": "^2.0.1",
     "psi": "^2.0.2",
     "run-sequence": "^1.1.5",
-    "tapjs": "^1.0.7"
+    "slick-carousel": "^1.5.9"
   }
 }

@@ -1,0 +1,23 @@
+.promo{
+
+  &__row{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    @include clearfix();
+
+    @media (min-width: $screen-md-min){
+      display: block;
+      height: 575px;
+    }
+  }
+
+  &__item{
+    padding-top: 90px;
+    padding-bottom: 20px;
+  }
+
+  &__text{
+    order: -5;
+  }
+}
