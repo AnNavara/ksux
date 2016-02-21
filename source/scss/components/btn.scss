@@ -1,0 +1,34 @@
+.btn{
+  display: inline-block;
+  text-align: center;
+  border-width: 2px;
+  border: 2px solid $gray-light;
+  transition: border-color 0.2s linear;
+
+  &:hover{
+    color: #fff;
+  }
+
+  &--big{
+    margin-top: 55px;
+    padding: 20px 64px;
+    font-size: $font-size-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $gray-dark;
+
+    > span{
+      margin-top: 8px;
+      display: block;
+      font-size: $font-size-small;
+      font-weight: normal;
+      color: $gray-light--mod;
+      text-transform: lowercase;
+    }
+
+    &:hover{
+      color: $gray-dark;
+      border-color: $gray-dark;
+    }
+  }
+}

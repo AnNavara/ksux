@@ -5,11 +5,17 @@
   overflow: hidden;
   box-shadow: 0 14px 0 -12px $gray-lightest;
 
+
+  &--full{
+    position: relative;
+  }
+
   @media (min-width: $screen-sm-min){
     box-shadow: none;
   }
 
   &__item{
+    outline: none;
     box-shadow: 0 100px 0 0 rgba(36, 41, 46, 0.09);
     // HACK
     // to make shadow of __content work properly with small images
@@ -43,6 +49,13 @@
     vertical-align: middle;
     transition: opacity 0.3s linear;
 
+    &--full{
+      position: absolute;
+      top: 90px;
+      left: 125px;
+      z-index: 10;
+    }
+
     &:focus{
       outline: none;
     }
@@ -61,6 +74,13 @@
     background-image: url("../img/icon-arrow-right.png");
     vertical-align: middle;
     transition: opacity 0.3s linear;
+
+    &--full{
+      position: absolute;
+      top: 90px;
+      right: 125px;
+      z-index: 10;
+    }
 
     &:focus{
       outline: none;
