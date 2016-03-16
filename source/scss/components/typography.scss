@@ -15,23 +15,35 @@ h1{
 }
 
 h2{
-  margin: 0 0 1.5em 0;
+  margin: 0 0 1.15em 0;
   font-family: $font-family-serif;
-  font-size: $font-size-h2;
+  font-size: $font-size-h2 * 0.8235;
   line-height: $line-height-base;
   color: $gray-dark;
   font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 0.008em;
+  letter-spacing: 0.08em;
+  word-wrap: break-word;
+  hyphens: auto;
+
+  @media (min-width: $screen-sm-min){
+    margin: 0 0 1.1em 0;
+    font-size: $font-size-h2;
+  }
 }
 
 h3{
-  margin: 0 0 1.4em 0;
+  margin: 0 0 1.2em 0;
   font-family: $font-family-serif;
-  font-size: $font-size-h3 ;
+  font-size: $font-size-h3 * 0.9;
   line-height: $line-height-base;
   color: $gray-dark;
   font-weight: normal;
+
+  @media (min-width: $screen-sm-min){
+    margin: 1.5em 0 0.7em 0;
+    font-size: $font-size-h3;
+  }
 }
 
 h4{
@@ -67,10 +79,14 @@ h6{
 p{
   margin: 0 0 1.15em 0;
   font-family: $font-family-serif;
-  font-size: $font-size-large;
+  font-size: $font-size-large * 0.8235;
   line-height: $line-height-big;
   color: $gray-dark;
   font-weight: normal;
+
+  @media (min-width: $screen-sm-min){
+    font-size: $font-size-large;
+  }
 }
 
 a{

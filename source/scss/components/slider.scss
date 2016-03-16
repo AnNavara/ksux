@@ -16,27 +16,67 @@
 
   &__item{
     outline: none;
-    box-shadow: 0 100px 0 0 rgba(36, 41, 46, 0.09);
-    // HACK
-    // to make shadow of __content work properly with small images
-    // e.g. no whitey space of no shadow
+    overflow: hidden;
+
+    @media (min-width: $screen-sm-min){
+      // box-shadow: 0 100px 0 0 rgba(36, 41, 46, 0.09);
+      // HACK
+      // to make shadow of __content work properly with small images
+      // e.g. no whitey space of no shadow
+    }
   }
 
   &__content{
     margin: 0 auto;
     max-width: 400px;
     height: 474px;
-    box-shadow: 0 -10px 40px 10px rgba(36, 41, 46, 0.15);
+    box-shadow: 0 -10px 40px 10px rgba(36, 41, 46, 0.03);
 
-    @media (min-width: $screen-lg-min) {
+    @media (min-width: $screen-sm-min){
+      box-shadow: 0 -10px 40px 10px rgba(36, 41, 46, 0.15);
+    }
+
+    @media (min-width: $screen-lg-min){
       max-width: 454px;
+    }
+
+    &--full{
+      margin: 0 auto;
+      max-width: none;
+      height: auto;
+      box-shadow: none;
+
+      @media (min-width: $screen-sm-min){
+        box-shadow: none;
+      }
+
+      @media (min-width: $screen-lg-min){
+        box-shadow: none;
+        max-width: none;
+      }
     }
   }
 
   &__pagination{
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
+    @include clearfix();
+
+    &--full{
+      padding-left: 20px;
+      padding-right: 20px;
+
+      @media (min-width: $screen-sm-min){
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    @media (min-width: $screen-sm-min){
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
   }
 
   &__prev{
@@ -47,13 +87,23 @@
     font-size: 0;
     background-image: url("../img/icon-arrow-left.png");
     vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: contain;
     transition: opacity 0.3s linear;
 
     &--full{
-      position: absolute;
-      top: 90px;
-      left: 125px;
-      z-index: 10;
+      float: left;
+      width: 28px;
+      height: 21px;
+
+      @media (min-width: $screen-sm-min){
+        position: absolute;
+        width: 39px;
+        height: 29px;
+        top: 128px;
+        left: 141px;
+        z-index: 10;
+      }
     }
 
     &:focus{
@@ -73,13 +123,24 @@
     font-size: 0;
     background-image: url("../img/icon-arrow-right.png");
     vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: contain;
     transition: opacity 0.3s linear;
 
     &--full{
-      position: absolute;
-      top: 90px;
-      right: 125px;
-      z-index: 10;
+      float: right;
+      width: 28px;
+      height: 21px;
+
+      @media (min-width: $screen-sm-min){
+        position: absolute;
+        width: 39px;
+        height: 29px;
+        top: 128px;
+        right: 141px;
+        z-index: 10;
+
+      }
     }
 
     &:focus{

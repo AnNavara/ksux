@@ -1,10 +1,16 @@
 .pagination{
-  margin-bottom: 51px;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   min-height: 21px;
   display: block;
   background-color: #fff;
+
+  @media (min-width: $screen-sm-min){
+    margin-bottom: 51px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
   &__btn{
     display: block;

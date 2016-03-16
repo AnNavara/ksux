@@ -3,17 +3,27 @@
   height: auto;
 
   &--space{
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+    @media (min-width: $screen-sm-min){
+      margin-top: 37px;
+      margin-bottom: 80px;
+    }
   }
 
   &-link{
     display: block;
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-top: 30px;
+    margin-bottom: 40px;
     position: relative;
     z-index: 5;
     overflow: hidden;
+
+    @media (min-width: $screen-sm-min){
+      margin-top: 56px;
+      margin-bottom: 86px;
+    }
 
     &::before{
       position: absolute;
@@ -71,46 +81,51 @@
 
   &-move{
     display: block;
-    margin-top: 105px;
-    max-height: 300px;
-    box-shadow: 0 0 40px 1px rgba(36, 41, 46, 0.12);
+    margin: 20px -40px 0;
+    padding: 40px 40px;
+    max-height: 130px;
     overflow: hidden;
-    backface-visibility: hidden;
     outline: none;
 
-    &:hover{
-      max-height: 320px;
-      margin-bottom: -20px;
-      transform: translateY(-20px);
-      transition: transform 0.4s ease-out,
-                  max-height 0.4s ease-out,
-                  margin-bottom 0.4s ease-out;
+    &:focus{
+      outline: none;
     }
 
-    &:not(:hover){
-      max-height: 300px;
-      margin-bottom: 0;
-      transform: translateY(0);
-      transition: transform 0.2s ease-out,
-                  max-height 0.2s ease-out,
-                  margin-bottom 0.2s ease-out;
+    //Paddings and margins due to inner img shadow
+
+    @media (min-width: $screen-sm-min){
+      margin: 59px -40px 0;
+      max-height: 360px;
+    }
+
+    > img{
+      box-shadow: 0 0 40px 1px rgba(36, 41, 46, 0.12);
+
+      @media (min-width: $screen-sm-min){
+        transform: translateY(27px);
+        transition: transform 0.4s ease;
+        backface-visibility: hidden;
+      }
+    }
+
+    &:hover{
+      >img{
+        @media (min-width: $screen-sm-min){
+          transform: translateY(0);
+        }
+      }
     }
 
     &--show{
       max-height: none;
-      transform: translateY(0);
-      transition: max-height 0.4s ease;
-    }
 
-    &--show:hover{
-      max-height: none;
-      margin-bottom: 0;
-      transform: translateY(0);
-    }
+      @media (min-width: $screen-sm-min){
+        max-height: none
+      }
 
-    &--show:not(:hover){
-      max-height: none;
-      transition: max-height 0.4s ease;
+      >img{
+        transform: none;
+      }
     }
   }
 }

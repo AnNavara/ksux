@@ -1,16 +1,24 @@
 .list{
-  padding-left: 30px;
+  padding-left: 31px;
   padding-right: 30px;
   text-align: left;
   color: #fff;
   list-style: none;
 
+  &__heading{
+    margin-bottom: 1.6em;
+  }
+
   &__item{
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 1.2em;
     font-family: $font-family-serif;
-    font-size: $font-size-large;
-    line-height: $line-height-base;
+    font-size: $font-size-large * 0.8823;
+    line-height: 1.6;
+
+    @media (min-width: $screen-sm-min){
+      font-size: $font-size-large;
+    }
 
     &::before{
       position: absolute;

@@ -5,11 +5,33 @@
     float: left;
 
     &--med{
-      width: 572px;
+      display: none;
+      width: 50%;
+
+      @media (min-width: $screen-sm-min){
+        display: block;
+        width: 50%;
+      }
+
+      @media (min-width: $screen-lg-min){
+        display: block;
+        width: 572px;
+      }
     }
 
     &--small{
-      width: 287px;
+      display: none;
+      width: 25%;
+
+      @media (min-width: $screen-sm-min){
+        display: block;
+        width: 25%;
+      }
+
+      @media (min-width: $screen-lg-min){
+        display: block;
+        width: 287px;
+      }
     }
   }
 

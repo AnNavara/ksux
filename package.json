@@ -1,6 +1,6 @@
 {
   "name": "ksux_page",
-  "version": "0.1.0",
+  "version": "0.2.3",
   "devDependencies": {
     "autoprefixer": "^6.3.0",
     "bootstrap-sass": "^3.3.6",

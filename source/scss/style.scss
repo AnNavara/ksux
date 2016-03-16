@@ -37,10 +37,9 @@
 @import "components/pagination.scss";
 @import "components/breadcrumbs.scss";
 @import "components/gallery.scss";
-@import "components/discuss.scss";
 @import "components/video.scss";
 
 //HACK To add charset to style file
-.this-shit-is-meaningles-why-would-you-broke-charset-declaration::after{
+.meaningles-charset-declaration-fix::after{
   content: "👻";
 }

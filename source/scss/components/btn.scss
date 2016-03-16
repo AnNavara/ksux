@@ -1,21 +1,40 @@
 .btn{
   display: inline-block;
+  padding: 0.7058em 1.9411em;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-h4 * 0.8888;
+  line-height: 1;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-align: center;
-  border-width: 2px;
+  text-transform: uppercase;
   border: 2px solid $gray-light;
   transition: border-color 0.2s linear;
 
+  @media (min-width: $screen-sm-min){
+    padding: 12px 50px;
+    font-size: $font-size-h4;
+  }
+
   &:hover{
     color: #fff;
+    border-color: #fff;
   }
 
   &--big{
-    margin-top: 55px;
-    padding: 20px 64px;
-    font-size: $font-size-large;
-    font-weight: bold;
+    margin-top: 25px;
+    padding: 1.1764em 1em;
+    font-size: $font-size-large * 0.8823;
     text-transform: uppercase;
+    letter-spacing: 0.11em;
     color: $gray-dark;
+
+    @media (min-width: $screen-sm-min){
+      margin-top: 37px;
+      padding: 1.3em 3.6em 0.95em;
+      font-size: $font-size-large;
+    }
 
     > span{
       margin-top: 8px;

@@ -1,29 +1,65 @@
 .blog{
-  padding-top: 37px;
+  padding-top: 35px;
   background-color: #fff;
   overflow: hidden; //fixes margin outflow
+  box-shadow: 0 -1px 30px 10px rgba(36, 41, 46, 0.03);
+
+  @media (min-width: $screen-sm-min){
+    padding-top: 37px;
+    box-shadow: 0 -1px 30px 10px rgba(36, 41, 46, 0.03);
+  }
 
   &__section{
-    padding-bottom: 150px;
-    margin-bottom: 120px;
-    box-shadow: 0 14px 0 -12px $gray-lightest;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 29px 0 -27px $gray-lightest;
     @include clearfix();
 
+    @media (min-width: $screen-sm-min){
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 150px;
+      margin-bottom: 120px;
+    }
+
     &--dark{
-      padding-top: 90px;
-      padding-bottom: 110px;
+      padding-top: 40px;
+      padding-bottom: 60px;
       text-align: center;
       background-color: $gray-darker;
       box-shadow: none;
       @include clearfix();
+
+      @media (min-width: $screen-sm-min){
+        padding-top: 88px;
+        padding-bottom: 108px;
+      }
     }
 
     &--no-margin{
       margin-bottom: 0;
+
+      @media (min-width: $screen-sm-min){
+        margin-bottom: 0;
+      }
+
+      @media (min-width: $screen-md-min){
+        margin-bottom: 0;
+      }
     }
 
     &--no-padding{
       padding-bottom: 0;
+
+      @media (min-width: $screen-sm-min){
+        padding-bottom: 0;
+      }
+
+      @media (min-width: $screen-md-min){
+        padding-bottom: 0;
+      }
     }
 
     &--no-shadow{
@@ -32,15 +68,33 @@
   }
 
   &__header{
-    margin-bottom: 119px;
-    padding-bottom: 69px;
-    box-shadow: 0 14px 0 -12px $gray-lightest;
+    margin-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 29px 0 -27px $gray-lightest;
+
+    @media (min-width: $screen-sm-min){
+      margin-bottom: 119px;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__heading{
-    margin-bottom: 0;
-    font-size: 66px;
+    margin-bottom: 40px;
+    font-size: $font-size-blog-heading * 0.5;
     line-height: 1.1;
     text-align: left;
+    word-wrap: break-word;
+
+    @media (min-width: $screen-sm-min){
+      margin-bottom: 69px;
+      font-size: $font-size-blog-heading;
+      word-wrap: normal;
+    }
+
+    @media (min-width: $screen-md-min){
+      font-size: $font-size-blog-heading;
+    }
   }
 }
