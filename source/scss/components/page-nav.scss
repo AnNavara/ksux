@@ -1,7 +1,27 @@
 .page-nav{
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
   text-align: center;
 
+  &::before{
+    position: absolute;
+    content: "";
+    top: -15px;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+
+    @media (min-width: $screen-sm-min){
+      display: none;
+    }
+  }
+
   @media (min-width: $screen-sm-min){
+    position: static;
     margin-top: 2px;
     margin-bottom: 50px;
   }
@@ -9,8 +29,8 @@
   &__wrap{
     display: block;
     position: absolute;
-    top: -10.3rem;
-    right: 1.9rem;
+    top: 0;
+    left: 10px;
     z-index: 1000;
     font-size: 0;
     text-align: left;
@@ -42,39 +62,47 @@
 
   &__drop{
     display: block;
+    position: absolute;
+    top: 20px;
+    left: 10px;
     margin: 0;
-    margin-bottom: 2em;
-    padding-left: 25px;
-    max-height: 0;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 10px;
+    width: calc(100% - 20px);
     z-index: 100;
     list-style: none;
     overflow: hidden;
-    transition: max-height .25s ease-out,
-                padding .3s ease-out;
+    background-color: $bg-wrapper;
+    transform: translateY(-150%);
+    transition: transform .2s ease-out;
     backface-visibility: hidden;
 
     @media (min-width: $screen-sm-min){
+      position: static;
       display: block;
-      margin-bottom: 0;
+      padding-left: 25px;
       max-height: none;
       transform: none;
       transition: none;
       padding: 0;
       border: none;
+      transform: none;
       overflow: visible;
     }
 
     li{
-      margin-bottom: 1.4em;
+      display: inline-block;
       position: relative;
-      display: block;
+      margin-bottom: 1.4em;
+      min-width: 49%;
       z-index: 100;
+      text-align: center;
 
       @media (min-width: $screen-sm-min){
-        display: inline-block;
         margin-bottom: 1.4em;
         margin-right: 4.3em;
-        text-align: center;
+        min-width: auto;
         vertical-align: bottom;
       }
 
@@ -186,14 +214,7 @@
     }
 
     &--active{
-      display: block;
-      margin-bottom: 2em;
-      padding-top: .5em;
-      padding-bottom: .5em;
-      max-height: 300px;
-      transition: max-height .6s ease-out,
-                  padding .1s ease-out;
-      backface-visibility: hidden;
+      transform: translateY(0);
     }
   }
 

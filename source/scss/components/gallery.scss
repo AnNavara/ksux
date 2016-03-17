@@ -12,11 +12,6 @@
         display: block;
         width: 50%;
       }
-
-      @media (min-width: $screen-lg-min){
-        display: block;
-        width: 572px;
-      }
     }
 
     &--small{
@@ -27,17 +22,11 @@
         display: block;
         width: 25%;
       }
-
-      @media (min-width: $screen-lg-min){
-        display: block;
-        width: 287px;
-      }
     }
   }
 
   &__img{
     min-width: 100%;
     height: 100%;
-    //forces img allways be size of container
   }
 }

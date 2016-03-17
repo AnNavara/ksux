@@ -17,13 +17,6 @@
   &__item{
     outline: none;
     overflow: hidden;
-
-    @media (min-width: $screen-sm-min){
-      // box-shadow: 0 100px 0 0 rgba(36, 41, 46, 0.09);
-      // HACK
-      // to make shadow of __content work properly with small images
-      // e.g. no whitey space of no shadow
-    }
   }
 
   &__content{
@@ -63,19 +56,28 @@
     text-align: center;
     @include clearfix();
 
+    @media (min-width: $screen-sm-min){
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
     &--full{
       padding-left: 20px;
       padding-right: 20px;
 
       @media (min-width: $screen-sm-min){
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding-left: 96px;
+        padding-right: 96px;
+      }
+
+      @media (min-width: $screen-md-min){
         padding-left: 0;
         padding-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
       }
-    }
-
-    @media (min-width: $screen-sm-min){
-      margin-top: 40px;
-      margin-bottom: 40px;
     }
   }
 
@@ -96,7 +98,7 @@
       width: 28px;
       height: 21px;
 
-      @media (min-width: $screen-sm-min){
+      @media (min-width: $screen-md-min){
         position: absolute;
         width: 39px;
         height: 29px;
@@ -132,7 +134,7 @@
       width: 28px;
       height: 21px;
 
-      @media (min-width: $screen-sm-min){
+      @media (min-width: $screen-md-min){
         position: absolute;
         width: 39px;
         height: 29px;

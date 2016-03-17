@@ -1,13 +1,11 @@
 .promo{
 
   &__row{
-    display: flex;
-    flex-direction: column;
+    display: block;
     overflow: hidden;
     @include clearfix();
 
     @media (min-width: $screen-md-min){
-      display: block;
       height: 575px;
     }
   }
@@ -24,9 +22,5 @@
     >h2{
       margin-bottom: 0.8em;
     }
-  }
-
-  &__text{
-    order: -5;
   }
 }
