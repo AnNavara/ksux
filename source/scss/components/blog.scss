@@ -10,8 +10,8 @@
   }
 
   &__section{
-    padding-bottom: 50px;
-    margin-bottom: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     box-shadow: 0 29px 0 -27px $gray-lightest;
@@ -20,7 +20,7 @@
     @media (min-width: $screen-sm-min){
       padding-left: 0;
       padding-right: 0;
-      padding-bottom: 100px;
+      padding-bottom: 90px;
       margin-bottom: 80px;
     }
 
@@ -80,15 +80,19 @@
   }
 
   &__header{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     box-shadow: 0 29px 0 -27px $gray-lightest;
 
     @media (min-width: $screen-sm-min){
-      margin-bottom: 119px;
+      margin-bottom: 80px;
       padding-left: 0;
       padding-right: 0;
+    }
+
+    @media (min-width: $screen-md-min){
+      margin-bottom: 119px;
     }
   }
 

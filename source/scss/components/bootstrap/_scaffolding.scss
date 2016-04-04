@@ -31,18 +31,13 @@ body {
   line-height: $line-height-base;
   color: $text-color;
   background-color: $bg-wrapper;
-  border: 5px solid $body-bg;
 
   // Border changed from default
   // Bootstrap
   // !
 
-  @media(min-width: $screen-sm){
-    border-width: 10px;
-  }
-
-  @media(min-width: $screen-md){
-    border-width: 20px;
+  @media(min-width: $screen-md-min){
+    border: 20px solid $body-bg;
   }
 }
 

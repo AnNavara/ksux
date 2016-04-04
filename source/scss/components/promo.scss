@@ -11,10 +11,15 @@
   }
 
   &__item{
-    padding-top: 40px;
+    padding-top: 0;
     padding-bottom: 15px;
 
     @media (min-width: $screen-sm-min){
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: $screen-md-min){
       padding-top: 90px;
       padding-bottom: 20px;
     }

@@ -14,12 +14,16 @@
 
   &__btn{
     display: block;
-    color: $gray;
     width: 28px;
     height: 21px;
     font-size: 0;
+    color: transparent;
     background-size: contain;
-    background-repeat: no-repeat;;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-sm-min){
+      color: $gray-light;
+    }
 
     &--prev{
       float: left;

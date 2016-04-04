@@ -1,6 +1,5 @@
 .slider{
   height: 100%;
-  min-height: 574px;
   background-color: $gray-lightest;
   overflow: hidden;
   box-shadow: 0 14px 0 -12px $gray-lightest;
@@ -11,6 +10,7 @@
   }
 
   @media (min-width: $screen-sm-min){
+    min-height: 574px;
     box-shadow: none;
   }
 
@@ -22,10 +22,11 @@
   &__content{
     margin: 0 auto;
     max-width: 400px;
-    height: 474px;
+    height: 280px;
     box-shadow: 0 -10px 40px 10px rgba(36, 41, 46, 0.03);
 
     @media (min-width: $screen-sm-min){
+      height: 474px;
       box-shadow: 0 -10px 40px 10px rgba(36, 41, 46, 0.15);
     }
 
@@ -40,10 +41,12 @@
       box-shadow: none;
 
       @media (min-width: $screen-sm-min){
+        height: auto;
         box-shadow: none;
       }
 
       @media (min-width: $screen-lg-min){
+        height: auto;
         box-shadow: none;
         max-width: none;
       }
@@ -64,6 +67,7 @@
     &--full{
       padding-left: 20px;
       padding-right: 20px;
+      margin-bottom: 0;
 
       @media (min-width: $screen-sm-min){
         margin-top: 20px;
@@ -84,7 +88,7 @@
   &__prev{
     display: inline-block;
     content: "";
-    width: 27px;
+    width: 28px;
     height: 21px;
     font-size: 0;
     background-image: url("../img/icon-arrow-left.png");
@@ -99,6 +103,15 @@
       height: 21px;
 
       @media (min-width: $screen-md-min){
+        position: absolute;
+        width: 39px;
+        height: 29px;
+        top: 128px;
+        left: 70px;
+        z-index: 10;
+      }
+
+      @media (min-width: $screen-lg-min){
         position: absolute;
         width: 39px;
         height: 29px;
@@ -120,7 +133,7 @@
   &__next{
     display: inline-block;
     content: "";
-    width: 27px;
+    width: 28px;
     height: 21px;
     font-size: 0;
     background-image: url("../img/icon-arrow-right.png");
@@ -139,9 +152,17 @@
         width: 39px;
         height: 29px;
         top: 128px;
+        right: 70px;
+        z-index: 10;
+      }
+
+      @media (min-width: $screen-lg-min){
+        position: absolute;
+        width: 39px;
+        height: 29px;
+        top: 128px;
         right: 141px;
         z-index: 10;
-
       }
     }
 
