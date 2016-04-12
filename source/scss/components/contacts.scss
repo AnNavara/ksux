@@ -1,0 +1,80 @@
+.contacts{
+  min-height: 512px;
+  background-color: $white;
+
+  &__text{
+    padding-top: 100px;
+    padding-bottom: 120px;
+
+    p{
+      margin-bottom: 32px;
+      font-family: $font-family-serif;
+      font-size: $font-size-large;
+      line-height: $line-height-big;
+    }
+  }
+
+  &__mail{
+    display: block;
+    margin-bottom: 12px;
+    font-family: $font-family-serif;
+    font-size: 52px;
+    color: $gray_dark;
+    text-transform: uppercase;
+
+    >a{
+      color: $gray-dark;
+
+      &:hover{
+        color: $gray-dark--lighten;
+      }
+
+      &:active{
+        color: $gray-darker;
+      }
+    }
+  }
+
+  &__tel{
+    display: block;
+    margin-bottom: 162px;
+    font-family: $font-family-serif;
+    font-size: $font-size-large;
+    color: $gray-dark;
+
+    >a{
+      display: inline;
+      color: $gray-dark;
+
+      &:hover{
+        color: $gray-dark--lighten;
+      }
+
+      &:active{
+        color: $gray-darker;
+      }
+    }
+  }
+
+  &__headings{
+    margin-bottom: 32px;
+  }
+}
+
+.social{
+
+  a{
+    margin-right: 1.35em;
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+    color: $gray-dark;
+
+    &:hover{
+      color: $gray-dark--lighten;
+    }
+
+    &:active{
+      color: $gray-darker;
+    }
+  }
+}

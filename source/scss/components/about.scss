@@ -1,0 +1,28 @@
+.about{
+  min-height: 512px;
+  background-color: #fff;
+  background-image: url('../img/bg__cat.jpg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+
+  &__text{
+    padding-top: 100px;
+
+    span{
+      font-family: $font-family-serif;
+      font-size: $font-size-h2--mod;
+      line-height: $line-height-small;
+    }
+
+    p{
+      margin-bottom: 32px;
+      font-family: $font-family-serif;
+      font-size: $font-size-large;
+      line-height: $line-height-big;
+    }
+  }
+
+  &__headings{
+    margin-bottom: 32px;
+  }
+}

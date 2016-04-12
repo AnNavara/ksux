@@ -22,9 +22,13 @@
 
     &::before{
       position: absolute;
-      content: "—";
+      content: "\2014";
       left: -30px;
       top: -1px;
     }
+  }
+
+  &--ordered{
+    list-style: decimal;
   }
 }

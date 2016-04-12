@@ -1,0 +1,122 @@
+.prices{
+  background-color: #fff;
+
+
+  &__header{
+    margin-bottom: 20px;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-color: $white;
+
+    h1{
+      margin-bottom: 2px;
+      font-family: $font-family-serif;
+      font-size: 86px;
+      line-height: $line-height-small;
+      text-align: left;
+
+      span{
+        display: inline;
+        font-family: $font-family-serif;
+        font-size: 58px;
+        text-transform: lowercase;
+      }
+    }
+
+    span{
+      display: block;
+      margin-bottom: 50px;
+      font-family: $font-family-serif;
+      font-size: $font-size-large;
+      line-height: $line-height-base;
+    }
+
+    p{
+      margin-bottom: 20px;
+      font-family: $font-family-serif;
+      font-size: $font-size-large;
+      line-height: $line-height-big;
+    }
+  }
+
+  &__list{
+    margin: 0;
+    padding: 61px 0 0 5px;
+    min-width: 100%;
+    list-style: none;
+
+    span{
+      margin-bottom: 24px;
+    }
+
+    li{
+      margin-bottom: 24px;
+      font-size: $font-size-large;
+
+      &::before{
+        display: inline-block;
+        content: "\2014\a0\a0";
+        left: -30px;
+        top: -1px;
+      }
+    }
+  }
+
+  &__heading{
+    padding-top: 83px;
+    padding-bottom: 59px;
+    background-color: #fff;
+
+    h2{
+      margin: 0;
+      font-family: $font-family-serif;
+      font-size: $font-size-h2;
+      line-height: $line-height-small;
+    }
+  }
+
+  &__item{
+    position: relative;
+  }
+
+  &__row{
+    height: 576px;
+
+    .prices__cell:nth-child(2){
+      background-color: #fff;
+    }
+  }
+
+  &__row:nth-child(2){
+
+    .prices__cell{
+      background-color: #fff;
+    }
+    .prices__cell:nth-child(2){
+      background-color: $white;
+    }
+  }
+
+  &__cell{
+    position: relative;
+    padding-left: 55px;
+    padding-top: 84px;
+    padding-bottom: 80px;
+    min-height: 100%;
+    background-color: $white;
+
+    h3{
+      margin: 0 0 0.78em 0;
+      font-family: $font-family-serif;
+      font-size: $font-size-h3;
+      line-height: $line-height-base;
+    }
+
+    p{
+      margin: 0 0 1.45em 0;
+      font-family: $font-family-serif;
+      font-size: $font-size-large;
+      line-height: $line-height-big;
+    }
+  }
+}

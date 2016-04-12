@@ -7,15 +7,14 @@
 //
 // Bootsrap styles
 // v3
-
 @import "components/bootstrap/_mixins.scss";
 @import "components/bootstrap/_scaffolding.scss";
 @import "components/bootstrap/_grid.scss";
 
+
 //
 // Custom styles
 //
-
 @import "components/grid-helper.scss";
 @import "components/typography.scss";
 @import "components/btn.scss";
@@ -24,10 +23,10 @@
 @import "components/page-footer.scss";
 @import "components/content.scss";
 
+
 //
 // Blog page styles
 //
-
 @import "components/blog.scss";
 @import "components/img.scss";
 @import "components/list.scss";
@@ -38,6 +37,24 @@
 @import "components/breadcrumbs.scss";
 @import "components/gallery.scss";
 @import "components/video.scss";
+
+
+//
+// About page
+//
+@import "components/about.scss";
+
+
+//
+// Contacts page
+//
+@import "components/contacts.scss";
+
+//
+// Prices page
+//
+@import "components/prices.scss";
+@import "components/payment.scss";
 
 //HACK To add charset to style file
 .meaningles-charset-declaration-fix::after{
