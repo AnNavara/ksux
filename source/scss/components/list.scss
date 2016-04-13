@@ -1,17 +1,26 @@
 .list{
-  padding-left: 31px;
-  padding-right: 30px;
+  margin: 0;
+  padding-left: 23px;
+  padding-right: 10px;
   text-align: left;
   color: #fff;
   list-style: none;
 
-  &__heading{
-    margin-bottom: 1.6em;
+  span{
+    display: block;
+    margin-bottom: 0.5em;
+    font-family: $font-family-serif;
+    font-size: $font-size-h3;
+    line-height: $line-height-big;
   }
 
-  &__item{
+  &__heading{
+    margin-bottom: 1.95em;
+  }
+
+  li{
     position: relative;
-    margin-bottom: 1.2em;
+    margin-bottom: 1.3em;
     font-family: $font-family-serif;
     font-size: $font-size-large * 0.8823;
     line-height: 1.6;
@@ -29,6 +38,12 @@
   }
 
   &--ordered{
+    padding: 0;
     list-style: decimal;
+    list-style-position: inside;
+
+    li::before{
+      display: none;
+    }
   }
 }

@@ -119,4 +119,30 @@
       line-height: $line-height-big;
     }
   }
+
+  &__knowledge{
+    padding-bottom: 40px;
+
+    @media (min-width: $screen-sm-min){
+      padding-bottom: 50px;
+    }
+
+    @media (min-width: $screen-md-min){
+      padding-bottom: 74px;  
+    }
+
+    h2{
+      margin-bottom: 0.5em;
+    }
+
+    header{
+      margin-bottom: 60px;
+
+      span{
+        font-family: $font-family-serif;
+        font-size: $font-size-large;
+        line-height: $line-height-big;
+      }
+    }
+  }
 }
