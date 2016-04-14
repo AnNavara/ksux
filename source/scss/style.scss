@@ -1,5 +1,5 @@
 @import "variables.scss";
-@import "_font-face.scss";
+// @import "_font-face.scss";
 
 @import "components/bootstrap/_normalize.scss";
 
@@ -42,12 +42,14 @@
 //
 // About page
 //
+@import "components/sidepage.scss";
 @import "components/about.scss";
 
 
 //
 // Contacts page
 //
+@import "components/social.scss";
 @import "components/contacts.scss";
 
 //

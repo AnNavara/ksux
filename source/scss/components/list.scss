@@ -39,8 +39,17 @@
 
   &--ordered{
     padding: 0;
+    margin-bottom: 4em;
     list-style: decimal;
     list-style-position: inside;
+
+    @media (min-width: $screen-sm-min){
+      padding-bottom: 0;
+    }
+
+    @media (min-width: $screen-md-min){
+      margin-bottom: 0;
+    }
 
     li::before{
       display: none;

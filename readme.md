@@ -24,7 +24,3 @@ Some page with some content.
 10. Классы у :root с заменой no-js js (для слайдеров)
 11. Проверить на progressive enhancement
 12. [Перепроверить валидацию](http://validator.w3.org/nu/?doc=http%3A%2F%2Fannavara.github.io%2Fbubaramburim%2Fblog.html)
-13. :active
-14. :disable
-15. Растянуть страницу на всю высоту
-16. About, Contacts, Цены -- адаптивность

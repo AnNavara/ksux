@@ -1,0 +1,44 @@
+$screen-m-mid: 24em;
+$screen-m-large: 26em;
+
+.social{
+  text-align: center;
+
+  a{
+    display: inline-block;
+    margin-bottom: 1.8em;
+    min-width: 40%;
+    font-size: 15px;
+    line-height: $line-height-large;
+    letter-spacing: 0.02em;
+    color: $gray-dark;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    @media (min-width: $screen-m-large){
+      margin-right: 1.35em;
+      margin-bottom: 1.3em;
+      min-width: auto;
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-sm-min){
+      display: inline;
+      font-size: $font-size-large;
+    }
+
+    &:hover{
+      color: $gray-dark--lighten;
+    }
+
+    &:active{
+      color: $gray-darker;
+    }
+  }
+
+  @media (min-width: $screen-md-min){
+    text-align: left;
+  }
+}

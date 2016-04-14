@@ -1,19 +1,15 @@
 .blog{
   padding-top: 35px;
   background-color: #fff;
-  overflow: hidden; //fixes margin outflow
-  box-shadow: 0 -1px 30px 10px rgba(36, 41, 46, 0.03);
+  // overflow: hidden; //fixes margin outflow
 
   @media (min-width: $screen-sm-min){
     padding-top: 37px;
-    box-shadow: 0 -1px 30px 10px rgba(36, 41, 46, 0.03);
   }
 
   &__section{
     padding-bottom: 30px;
     margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
     box-shadow: 0 29px 0 -27px $gray-lightest;
     @include clearfix();
 
@@ -80,8 +76,6 @@
   }
 
   &__header{
-    margin-bottom: 20px;
-    padding-left: 20px;
     padding-right: 20px;
     box-shadow: 0 29px 0 -27px $gray-lightest;
 

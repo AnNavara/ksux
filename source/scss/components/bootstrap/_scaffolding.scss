@@ -26,13 +26,14 @@ html {
 }
 
 body {
+  min-height: 100vh;
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $text-color;
   background-color: $bg-wrapper;
 
-  // Border changed from default
+  // Border % min-height changed from default
   // Bootstrap
   // !
 

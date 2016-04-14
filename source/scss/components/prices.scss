@@ -3,32 +3,52 @@
 
 
   &__header{
-    margin-bottom: 20px;
-    padding-top: 100px;
-    padding-bottom: 90px;
+    margin-bottom: 2em;
+    padding-top: 3em;
+    padding-bottom: 4em;
     background-color: $white;
 
+    @media (min-width: $screen-sm-min){
+      margin-bottom: 20px;
+      padding-top: 100px;
+      padding-bottom: 90px;
+    }
+
     h1{
-      margin-bottom: 2px;
+      margin-bottom: 0.3em;
       font-family: $font-family-serif;
-      font-size: 86px;
+      font-size: 52px;
       line-height: $line-height-small;
       text-align: left;
+
+      @media (min-width: $screen-sm-min){
+        margin-bottom: 2px;
+        font-size: 86px;
+      }
 
       span{
         display: inline;
         font-family: $font-family-serif;
-        font-size: 58px;
+        font-size: 40px;
         text-transform: lowercase;
+
+        @media (min-width: $screen-sm-min){
+          font-size: 58px;
+        }
       }
     }
 
     span{
       display: block;
-      margin-bottom: 50px;
+      margin-bottom: 1.5em;
       font-family: $font-family-serif;
       font-size: $font-size-large;
-      line-height: $line-height-base;
+      line-height: $line-height-big;
+
+      @media (min-width: $screen-sm-min){
+        margin-bottom: 50px;
+        line-height: $line-height-base;
+      }
     }
 
     p{
@@ -41,17 +61,29 @@
 
   &__list{
     margin: 0;
-    padding: 61px 0 0 5px;
+    padding: 2.8em 0 0;
     min-width: 100%;
     list-style: none;
 
+    @media (min-width: $screen-sm-min){
+      padding: 61px 0 0 5px;
+    }
+
     span{
-      margin-bottom: 24px;
+      margin-bottom: 1em;
+
+      @media (min-width: $screen-sm-min){
+        margin-bottom: 24px;
+      }
     }
 
     li{
-      margin-bottom: 24px;
+      margin-bottom: 1em;
       font-size: $font-size-large;
+
+      @media (min-width: $screen-sm-min){
+        margin-bottom: 24px;
+      }
 
       &::before{
         display: inline-block;
@@ -63,15 +95,24 @@
   }
 
   &__heading{
-    padding-top: 83px;
-    padding-bottom: 59px;
+    padding-top: 4em;
+    padding-bottom: 3em;
     background-color: #fff;
+
+    @media (min-width: $screen-sm-min){
+      padding-top: 83px;
+      padding-bottom: 59px;
+    }
 
     h2{
       margin: 0;
       font-family: $font-family-serif;
-      font-size: $font-size-h2;
+      font-size: $font-size-h2 * 0.86;
       line-height: $line-height-small;
+
+      @media (min-width: $screen-sm-min){
+        font-size: $font-size-h2;
+      }
     }
   }
 
@@ -80,7 +121,15 @@
   }
 
   &__row{
-    height: 576px;
+
+    @media (min-width: $screen-md-min){
+      height: 690px;
+    }
+
+
+    @media (min-width: $screen-lg-min){
+      height: 576px;
+    }
 
     .prices__cell:nth-child(2){
       background-color: #fff;
@@ -90,20 +139,33 @@
   &__row:nth-child(2){
 
     .prices__cell{
-      background-color: #fff;
+      background-color: $white;
+
+      @media (min-width: $screen-md-min){
+        background-color: #fff;
+      }
     }
     .prices__cell:nth-child(2){
-      background-color: $white;
+      background-color: #fff;
+
+      @media (min-width: $screen-md-min){
+        background-color: $white;
+      }
     }
   }
 
   &__cell{
     position: relative;
-    padding-left: 55px;
-    padding-top: 84px;
-    padding-bottom: 80px;
+    padding-top: 4.4em;
+    padding-bottom: 3.4em;
     min-height: 100%;
     background-color: $white;
+
+    @media (min-width: $screen-sm-min){
+      padding-left: 55px;
+      padding-top: 84px;
+      padding-bottom: 80px;
+    }
 
     h3{
       margin: 0 0 0.78em 0;
@@ -121,14 +183,15 @@
   }
 
   &__knowledge{
-    padding-bottom: 40px;
+    padding-top: 1.4em;
+    padding-bottom: 4em;
 
     @media (min-width: $screen-sm-min){
       padding-bottom: 50px;
     }
 
     @media (min-width: $screen-md-min){
-      padding-bottom: 74px;  
+      padding-bottom: 74px;
     }
 
     h2{
@@ -136,7 +199,15 @@
     }
 
     header{
-      margin-bottom: 60px;
+      margin-bottom: 4em;
+
+      @media (min-width: $screen-sm-min){
+        padding-bottom: 50px;
+      }
+
+      @media (min-width: $screen-md-min){
+        margin-bottom: 60px;
+      }
 
       span{
         font-family: $font-family-serif;

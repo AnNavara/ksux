@@ -1,26 +1,51 @@
+$screen-m-mid: 24em;
+$screen-m-large: 26em;
+
 .contacts{
-  min-height: 512px;
   background-color: $white;
 
   &__text{
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding-top: 5em;
+    padding-bottom: 4.5em;
+    text-align: center;
 
-    p{
-      margin-bottom: 32px;
-      font-family: $font-family-serif;
-      font-size: $font-size-large;
-      line-height: $line-height-big;
+    @media (min-width: $screen-sm-min){
+      padding-top: 8em;
+      padding-bottom: 11em;
+    }
+
+    @media (min-width: $screen-md-min){
+      padding-bottom: 102px;
+      padding-top: 80px;
+      text-align: left;
+    }
+
+    @media (min-width: $screen-lg-min){
+      padding-top: 107px;
     }
   }
 
-  &__mail{
+  .contacts__mail{
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 0.8em;
     font-family: $font-family-serif;
-    font-size: 52px;
+    font-size: 23px;
+    letter-spacing: 0.08em;
     color: $gray_dark;
     text-transform: uppercase;
+
+    @media (min-width: $screen-m-mid){
+      font-size: 28px;
+    }
+
+    @media (min-width: $screen-m-large){
+      font-size: 32px;
+    }
+
+    @media (min-width: $screen-sm-min){
+      margin-bottom: 10px;
+      font-size: 52px;
+    }
 
     >a{
       color: $gray-dark;
@@ -37,14 +62,24 @@
 
   &__tel{
     display: block;
-    margin-bottom: 162px;
+    margin-bottom: 6em;
     font-family: $font-family-serif;
     font-size: $font-size-large;
     color: $gray-dark;
 
+    @media (min-width: $screen-sm-min){
+      margin-bottom: 9em;
+    }
+
+    @media (min-width: $screen-md-min){
+      margin-bottom: 164px;
+    }
+
     >a{
-      display: inline;
       color: $gray-dark;
+
+      @media (min-width: $screen-sm-min){
+      }
 
       &:hover{
         color: $gray-dark--lighten;
@@ -58,23 +93,5 @@
 
   &__headings{
     margin-bottom: 32px;
-  }
-}
-
-.social{
-
-  a{
-    margin-right: 1.35em;
-    font-size: $font-size-large;
-    line-height: $line-height-large;
-    color: $gray-dark;
-
-    &:hover{
-      color: $gray-dark--lighten;
-    }
-
-    &:active{
-      color: $gray-darker;
-    }
   }
 }
