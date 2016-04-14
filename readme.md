@@ -20,7 +20,6 @@ Some page with some content.
 6.  Поправить высоту строк (line-height)
 7.  Перепроверить на планшетах
 8.  Меню неправильно отображается на вебките
-9.  Сменить px на em в медиавыражениях, (если удасться совладать с бутстрапом)
-10. Классы у :root с заменой no-js js (для слайдеров)
-11. Проверить на progressive enhancement
-12. [Перепроверить валидацию](http://validator.w3.org/nu/?doc=http%3A%2F%2Fannavara.github.io%2Fbubaramburim%2Fblog.html)
+9.  Классы у :root с заменой no-js js (для слайдеров)
+10. Проверить на progressive enhancement
+11. [Перепроверить валидацию](http://validator.w3.org/nu/?doc=http%3A%2F%2Fannavara.github.io%2Fbubaramburim%2Fblog.html)
