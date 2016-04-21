@@ -1,21 +1,45 @@
 .list{
-  margin: 0;
-  padding-left: 23px;
-  padding-right: 10px;
-  text-align: left;
   color: #fff;
-  list-style: none;
+  text-align: left;
 
-  span{
-    display: block;
-    margin-bottom: 0.5em;
-    font-family: $font-family-serif;
-    font-size: $font-size-h3;
-    line-height: $line-height-big;
+  &--light{
+    color: $gray-dark;
+
+    h1,h2,h3,h4,h5,h6,p{
+      color: $gray-dark;
+
+      @media (min-width: $screen-sm-min){
+        color: $gray-dark;
+      }
+    }
+  }
+
+  &--pad{
+    padding-left: 26px;
   }
 
   &__heading{
     margin-bottom: 1.95em;
+  }
+
+  ul{
+    margin: 0;
+    padding-left: 23px;
+    padding-right: 10px;
+    list-style: none;
+  }
+
+  h3{
+    display: block;
+    margin: 0 0 0.5em 0;
+    font-family: $font-family-serif;
+    font-size: $font-size-large;
+    line-height: $line-height-big;
+    color: #fff;
+
+    @media (min-width: $screen-sm-min){
+      font-size: $font-size-h3;
+    }
   }
 
   li{
@@ -24,20 +48,22 @@
     font-family: $font-family-serif;
     font-size: $font-size-large * 0.8823;
     line-height: 1.6;
+    letter-spacing: 0.03em;
 
     @media (min-width: $screen-sm-min){
       font-size: $font-size-large;
+      letter-spacing: normal;
     }
 
     &::before{
       position: absolute;
       content: "\2014";
-      left: -30px;
-      top: -1px;
+      left: -32px;
+      top: 0px;
     }
   }
 
-  &--ordered{
+  ol{
     padding: 0;
     margin-bottom: 4em;
     list-style: decimal;

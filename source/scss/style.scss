@@ -11,6 +11,10 @@
 @import "components/bootstrap/_scaffolding.scss";
 @import "components/bootstrap/_grid.scss";
 
+//
+//tmp
+//
+@import "../../tmp/styles/sprite";
 
 //
 // Custom styles
@@ -28,6 +32,7 @@
 // Blog page styles
 //
 @import "components/blog.scss";
+@import "components/section.scss";
 @import "components/img.scss";
 @import "components/list.scss";
 @import "components/slider.scss";

@@ -71,15 +71,13 @@
     opacity: 0;
     text-transform: uppercase;
     transform: translateY(28px);
-    // transition: transform .4s ease-in,
-    //             color .3s linear,
-    //             opacity .3s linear .1s;
   }
 
   &__descr{
     position: absolute;
     left: 28px;
     bottom: 14px;
+    width: 80%;
     z-index: 15;
 
     >span{
@@ -93,10 +91,10 @@
 
   &__container{
     position: absolute;
-    top: -20px;
-    bottom: 0;
+    top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    height: calc(100% - 20px);
     text-align: center;
     font: 0/0 a;
 

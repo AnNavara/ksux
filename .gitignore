@@ -1,5 +1,6 @@
 _design
 node_modules
 build
+tmp
 *.log
 todo.txt

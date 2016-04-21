@@ -16,8 +16,6 @@
     height: 21px;
     font-size: 0;
     color: transparent;
-    background-size: contain;
-    background-repeat: no-repeat;
 
     @media (min-width: $screen-sm-min){
       color: $gray-light;
@@ -25,12 +23,12 @@
 
     &--prev{
       float: left;
-      background-image: url("../img/icon-arrow-left.png");
+      @extend %icon-arrow_left;
     }
 
     &--next{
       float: right;
-      background-image: url("../img/icon-arrow-right.png");
+      @extend %icon-arrow_right;
     }
   }
 }

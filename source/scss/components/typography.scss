@@ -17,7 +17,7 @@ h1{
 h2{
   margin: 1.4em 0 0.6em 0;
   font-family: $font-family-serif;
-  font-size: $font-size-h2 * 0.8235;
+  font-size: $font-size-h2 * 0.794117;
   line-height: $line-height-base;
   color: $gray-dark;
   font-weight: normal;
@@ -35,10 +35,11 @@ h2{
 h3{
   margin: 1.3em 0 0.7em 0;
   font-family: $font-family-serif;
-  font-size: $font-size-h3 * 0.9;
+  font-size: $font-size-h3 * 0.857142;
   line-height: $line-height-base;
   color: $gray-dark;
   font-weight: normal;
+  hyphens: auto;
 
   @media (min-width: $screen-sm-min){
     margin: 1.5em 0 1.4em 0;
@@ -79,7 +80,19 @@ h6{
 p{
   margin: 0 0 1.15em 0;
   font-family: $font-family-serif;
-  font-size: $font-size-large * 0.8235;
+  font-size: $font-size-base;
+  line-height: $line-height-big;
+  color: $gray-dark;
+  font-weight: normal;
+
+  @media (min-width: $screen-sm-min){
+    font-size: $font-size-large;
+  }
+}
+
+span{
+  font-family: $font-family-serif;
+  font-size: $font-size-base;
   line-height: $line-height-big;
   color: $gray-dark;
   font-weight: normal;

@@ -40,7 +40,6 @@
       margin-bottom: 86px;
     }
 
-
     &::before{
       position: absolute;
       content: "";
@@ -49,8 +48,8 @@
       left: 43%;
       width: 50px;
       height: 50px;
-      background-image: url("../img/icon-magnifier.png");
-      background-size: contain;
+      @extend %icon-magnifier;
+      background-size: cover;
       opacity: 0;
       transition: opacity 0.2s linear;
 

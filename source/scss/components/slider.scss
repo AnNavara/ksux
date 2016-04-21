@@ -87,25 +87,17 @@
 
   &__prev{
     display: inline-block;
-    content: "";
-    width: 28px;
-    height: 21px;
-    font-size: 0;
-    background-image: url("../img/icon-arrow-left.png");
     vertical-align: middle;
-    background-repeat: no-repeat;
-    background-size: contain;
+    font-size: 0;
+    @extend %icon-arrow_left;
     transition: opacity 0.3s linear;
 
     &--full{
       float: left;
-      width: 28px;
-      height: 21px;
 
       @media (min-width: $screen-md-min){
         position: absolute;
-        width: 39px;
-        height: 29px;
+        content: "";
         top: 128px;
         left: 70px;
         z-index: 10;
@@ -113,10 +105,11 @@
 
       @media (min-width: $screen-lg-min){
         position: absolute;
-        width: 39px;
-        height: 29px;
         top: 128px;
         left: 141px;
+        width: 39px;
+        height: 27px;
+        background-size: cover;
         z-index: 10;
       }
     }
@@ -132,25 +125,17 @@
 
   &__next{
     display: inline-block;
-    content: "";
-    width: 28px;
-    height: 21px;
-    font-size: 0;
-    background-image: url("../img/icon-arrow-right.png");
     vertical-align: middle;
-    background-repeat: no-repeat;
-    background-size: contain;
+    font-size: 0;
+    @extend %icon-arrow_right;
     transition: opacity 0.3s linear;
 
     &--full{
       float: right;
-      width: 28px;
-      height: 21px;
 
       @media (min-width: $screen-md-min){
         position: absolute;
-        width: 39px;
-        height: 29px;
+        content: "";
         top: 128px;
         right: 70px;
         z-index: 10;
@@ -158,10 +143,11 @@
 
       @media (min-width: $screen-lg-min){
         position: absolute;
-        width: 39px;
-        height: 29px;
         top: 128px;
         right: 141px;
+        width: 39px;
+        height: 27px;
+        background-size: cover;
         z-index: 10;
       }
     }
@@ -177,9 +163,9 @@
 
   &__counter{
     display: inline-block;
+    vertical-align: middle;
     width: 90px;
     font-size: $font-size-large;
     color: $gray-font-9a;
-    vertical-align: top;
   }
 }
