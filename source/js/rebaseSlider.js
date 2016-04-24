@@ -1,9 +1,9 @@
 'use strict';
 
 (function() {
-  function rebaseToSecond(el) {
+  function rebase(el) {
     if (el.parentNode.firstChild.nextSibling !== el) {
-      el.parentNode.insertBefore(el, el.parentNode.firstChild.nextSibling);
+      el.parentNode.insertBefore(el, el.parentNode.firstChild.nextElementSibling);
     }
   }
 
@@ -13,7 +13,7 @@
 
     for (var i = 0; i < row.length; i++) {
       var text = row[i].querySelector('.promo__text');
-      rebaseToSecond(text);
+      rebase(text);
     }
   }
 })();

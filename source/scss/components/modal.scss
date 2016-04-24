@@ -1,0 +1,140 @@
+.modal{
+  display: none;
+  position: fixed;
+  padding: 10px 20px 20px 20px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: $gray-darker;
+  overflow: auto;
+
+  &--active{
+    display: block;
+  }
+
+  &__header{
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    @include clearfix();
+    border-bottom: 2px solid $gray-dark--lighten;
+
+    &::before{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+    }
+
+    &.zoomed{
+      display: none;
+    }
+  }
+
+  &__descr{
+    float: left;
+
+    h3{
+      margin: 0;
+      font-family: $font-family-sans-serif;
+      font-size: $font-size-large;
+      letter-spacing: 0.008em;
+      color: $gray-lighten;
+    }
+
+    p{
+      margin: 0;
+      font-family: $font-family-sans-serif;
+      font-size: $font-size-base;
+      color: $gray-font-9a;
+    }
+  }
+
+  &__control{
+    float: right;
+    margin-right: 18px;
+    padding-top: 3px;
+    height: 50px;
+
+    &:before{
+      display: inline-block;
+      vertical-align: middle;
+      content: " ";
+      height: 50px;
+    }
+  }
+
+  &__close{
+    position: relative;
+    min-width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+
+    &:hover::before, &:hover::after{
+      background-color: $gray-lighten;
+      transition: background-color 0.2s linear;
+    }
+
+    &::before{
+      position: absolute;
+      content: " ";
+      left: 0;
+      top: 12px;
+      width: 100%;
+      height: 3px;
+      transform: rotate(45deg);
+      border-radius: 2px;
+      background-color: $gray;
+    }
+
+    &::after{
+      position: absolute;
+      content: " ";
+      left: 0;
+      top: 12px;
+      width: 100%;
+      height: 3px;
+      transform: rotate(-45deg);
+      border-radius: 2px;
+      background-color: $gray;
+    }
+
+    span{
+      font-size: 0;
+      color: $gray;
+
+      &:hover{
+        color: $gray-dark;
+      }
+    }
+  }
+
+  &__wrapper{
+    &.zoomed{
+      cursor: default;
+    }
+  }
+  img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+
+    &:hover{
+      cursor: zoom-in;
+    }
+
+    &.zoomed{
+      max-width: none;
+
+      &:hover{
+        cursor: zoom-out;
+      }
+    }
+  }
+}

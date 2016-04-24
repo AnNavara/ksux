@@ -12,11 +12,4 @@ Some page with some content.
 
 ##Things to do
 
-1.  Стрелки в свг, фолбек на пнг.
-2.  Добавить тултипы ко всему
-3.  Сделать модальное окно
-4.  Поправить высоту строк (line-height)
-5.  Перепроверить на планшетах
-6.  Классы у :root с заменой no-js js (для слайдеров)
-7.  [Перепроверить валидацию](http://validator.w3.org/nu/?doc=http%3A%2F%2Fannavara.github.io%2Fbubaramburim%2Fblog.html)
-8.  Меню на мобильных
+-   Что-то ещё?

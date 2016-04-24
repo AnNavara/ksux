@@ -20,6 +20,18 @@
 
   &__text{
 
+    h1{
+      display: block;
+      font-family: $font-family-serif;
+      font-size: $font-size-h2--mod * 0.72;
+      line-height: $line-height-small;
+
+      @media (min-width: $screen-sm-min){
+        display: inline;
+        font-size: $font-size-h2--mod;
+      }
+    }
+
     span{
       display: block;
       font-family: $font-family-serif;

@@ -1,9 +1,9 @@
 .blog{
   padding-top: 35px;
   background-color: #fff;
-  // overflow: hidden; //fixes margin outflow
 
   @media (min-width: $screen-sm-min){
+    margin-bottom: 70px;
     padding-top: 37px;
   }
 

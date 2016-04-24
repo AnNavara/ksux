@@ -108,8 +108,7 @@
         top: 128px;
         left: 141px;
         width: 39px;
-        height: 27px;
-        background-size: cover;
+        height: 22px;
         z-index: 10;
       }
     }
@@ -146,8 +145,7 @@
         top: 128px;
         right: 141px;
         width: 39px;
-        height: 27px;
-        background-size: cover;
+        height: 22px;
         z-index: 10;
       }
     }
@@ -165,7 +163,9 @@
     display: inline-block;
     vertical-align: middle;
     width: 90px;
+    font-family: $font-family-sans-serif;
     font-size: $font-size-large;
+    font-weight: bold;
     color: $gray-font-9a;
   }
 }
