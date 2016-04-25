@@ -1,35 +1,23 @@
-.list{
+.list {
   color: #fff;
   text-align: left;
 
-  &--light{
-    color: $gray-dark;
-
-    h1,h2,h3,h4,h5,h6,p{
-      color: $gray-dark;
-
-      @media (min-width: $screen-sm-min){
-        color: $gray-dark;
-      }
-    }
-  }
-
-  &--pad{
+  &--pad {
     padding-left: 26px;
   }
 
-  &__heading{
+  &__heading {
     margin-bottom: 1.95em;
   }
 
-  ul{
-    margin: 0;
-    padding-left: 23px;
+  ul {
     padding-right: 10px;
+    padding-left: 23px;
+    margin: 0;
     list-style: none;
   }
 
-  h3{
+  h3 {
     display: block;
     margin: 0 0 0.5em 0;
     font-family: $font-family-serif;
@@ -37,12 +25,12 @@
     line-height: $line-height-big;
     color: #fff;
 
-    @media (min-width: $screen-sm-min){
-      font-size: $font-size-h3;
+    @media (min-width: $screen-sm-min) {
+      font-size: $font-size-large;
     }
   }
 
-  li{
+  li {
     position: relative;
     margin-bottom: 1.3em;
     font-family: $font-family-serif;
@@ -50,35 +38,48 @@
     line-height: 1.6;
     letter-spacing: 0.03em;
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       font-size: $font-size-large;
       letter-spacing: normal;
     }
 
-    &::before{
+    &::before {
       position: absolute;
-      content: "\2014";
+      top: 0;
       left: -32px;
-      top: 0px;
+      content: "\2014";
     }
   }
 
-  ol{
+  ol {
     padding: 0;
     margin-bottom: 4em;
     list-style: decimal;
     list-style-position: inside;
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       padding-bottom: 0;
     }
 
-    @media (min-width: $screen-md-min){
+    @media (min-width: $screen-md-min) {
       margin-bottom: 0;
     }
 
-    li::before{
+    li::before {
       display: none;
+    }
+  }
+
+
+  &--light {
+    color: $gray-dark;
+
+    h1,h2,h3,h4,h5,h6,p {
+      color: $gray-dark;
+
+      @media (min-width: $screen-sm-min) {
+        color: $gray-dark;
+      }
     }
   }
 }

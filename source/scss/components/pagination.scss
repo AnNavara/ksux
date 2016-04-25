@@ -1,33 +1,35 @@
-.pagination{
-  margin-bottom: 25px;
-  min-height: 21px;
+.pagination {
   display: block;
+  min-height: 21px;
+  margin-bottom: 25px;
   background-color: #fff;
 
-  @media (min-width: $screen-sm-min){
-    margin-bottom: 51px;
-    padding-left: 28px;
+  @media (min-width: $screen-sm-min) {
     padding-right: 28px;
+    padding-left: 28px;
+    margin-bottom: 51px;
   }
 
-  &__btn{
+  &__btn {
     display: block;
     width: 28px;
     height: 21px;
     font-size: 0;
     color: transparent;
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       color: $gray-light;
     }
 
-    &--prev{
+    &--prev {
       float: left;
+
       @extend %icon-arrow_left;
     }
 
-    &--next{
+    &--next {
       float: right;
+
       @extend %icon-arrow_right;
     }
   }

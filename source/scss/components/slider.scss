@@ -1,171 +1,174 @@
-.slider{
+.slider {
   height: 100%;
-  background-color: $gray-lightest;
   overflow: hidden;
+  background-color: $gray-lightest;
   box-shadow: 0 14px 0 -12px $gray-lightest;
 
 
-  &--full{
+  &--full {
     position: relative;
   }
 
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-sm-min) {
     min-height: 574px;
     box-shadow: none;
   }
 
-  &__item{
-    outline: none;
+  &__item {
     overflow: hidden;
+    outline: none;
   }
 
-  &__content{
-    margin: 0 auto;
+  &__content {
     max-width: 400px;
     height: 280px;
+    margin: 0 auto;
     box-shadow: 0 -10px 40px 10px rgba(36, 41, 46, 0.03);
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       height: 474px;
       box-shadow: 0 -10px 40px 10px rgba(36, 41, 46, 0.15);
     }
 
-    @media (min-width: $screen-lg-min){
+    @media (min-width: $screen-lg-min) {
       max-width: 454px;
     }
 
-    &--full{
-      margin: 0 auto;
+    &--full {
       max-width: none;
       height: auto;
+      margin: 0 auto;
       box-shadow: none;
 
-      @media (min-width: $screen-sm-min){
+      @media (min-width: $screen-sm-min) {
         height: auto;
         box-shadow: none;
       }
 
-      @media (min-width: $screen-lg-min){
+      @media (min-width: $screen-lg-min) {
+        max-width: none;
         height: auto;
         box-shadow: none;
-        max-width: none;
       }
     }
   }
 
-  &__pagination{
+  &__pagination {
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
+
     @include clearfix();
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       margin-top: 40px;
       margin-bottom: 40px;
     }
 
-    &--full{
-      padding-left: 20px;
+    &--full {
       padding-right: 20px;
+      padding-left: 20px;
       margin-bottom: 0;
 
-      @media (min-width: $screen-sm-min){
+      @media (min-width: $screen-sm-min) {
+        padding-right: 96px;
+        padding-left: 96px;
         margin-top: 20px;
         margin-bottom: 0;
-        padding-left: 96px;
-        padding-right: 96px;
       }
 
-      @media (min-width: $screen-md-min){
-        padding-left: 0;
+      @media (min-width: $screen-md-min) {
         padding-right: 0;
+        padding-left: 0;
         margin-top: 0;
         margin-bottom: 0;
       }
     }
   }
 
-  &__prev{
+  &__prev {
     display: inline-block;
-    vertical-align: middle;
     font-size: 0;
-    @extend %icon-arrow_left;
+    vertical-align: middle;
     transition: opacity 0.3s linear;
 
-    &--full{
+    @extend %icon-arrow_left;
+
+    &--full {
       float: left;
 
-      @media (min-width: $screen-md-min){
+      @media (min-width: $screen-md-min) {
         position: absolute;
-        content: "";
         top: 128px;
         left: 70px;
         z-index: 10;
+        content: "";
       }
 
-      @media (min-width: $screen-lg-min){
+      @media (min-width: $screen-lg-min) {
         position: absolute;
         top: 128px;
         left: 141px;
+        z-index: 10;
         width: 39px;
         height: 22px;
-        z-index: 10;
       }
     }
 
-    &:focus{
+    &:focus {
       outline: none;
     }
 
-    &--last{
+    &--last {
       opacity: 0.3;
     }
   }
 
-  &__next{
+  &__next {
     display: inline-block;
-    vertical-align: middle;
     font-size: 0;
-    @extend %icon-arrow_right;
+    vertical-align: middle;
     transition: opacity 0.3s linear;
 
-    &--full{
+    @extend %icon-arrow_right;
+
+    &--full {
       float: right;
 
-      @media (min-width: $screen-md-min){
+      @media (min-width: $screen-md-min) {
         position: absolute;
-        content: "";
         top: 128px;
         right: 70px;
         z-index: 10;
+        content: "";
       }
 
-      @media (min-width: $screen-lg-min){
+      @media (min-width: $screen-lg-min) {
         position: absolute;
         top: 128px;
         right: 141px;
+        z-index: 10;
         width: 39px;
         height: 22px;
-        z-index: 10;
       }
     }
 
-    &:focus{
+    &:focus {
       outline: none;
     }
 
-    &--last{
+    &--last {
       opacity: 0.3;
     }
   }
 
-  &__counter{
+  &__counter {
     display: inline-block;
-    vertical-align: middle;
     width: 90px;
     font-family: $font-family-sans-serif;
     font-size: $font-size-large;
     font-weight: bold;
     color: $gray-font-9a;
+    vertical-align: middle;
   }
 }

@@ -1,67 +1,69 @@
-.section{
+.section {
   padding-bottom: 30px;
   margin-bottom: 20px;
   box-shadow: 0 29px 0 -27px $gray-lightest;
+
   @include clearfix();
 
-  @media (min-width: $screen-sm-min){
-    padding-left: 0;
+  @media (min-width: $screen-sm-min) {
     padding-right: 0;
     padding-bottom: 90px;
+    padding-left: 0;
     margin-bottom: 80px;
   }
 
-  @media (min-width: $screen-md-min){
-    padding-left: 0;
+  @media (min-width: $screen-md-min) {
     padding-right: 0;
     padding-bottom: 129px;
+    padding-left: 0;
     margin-bottom: 120px;
   }
 
-  &--dark{
+  &--dark {
     padding-top: 40px;
     padding-bottom: 60px;
     text-align: center;
     background-color: $gray-darker;
     box-shadow: none;
+
     @include clearfix();
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       padding-top: 68px;
       padding-bottom: 78px;
     }
 
-    @media (min-width: $screen-md-min){
+    @media (min-width: $screen-md-min) {
       padding-top: 88px;
       padding-bottom: 102px;
     }
   }
 
-  &--no-margin{
+  &--no-margin {
     margin-bottom: 0;
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       margin-bottom: 0;
     }
 
-    @media (min-width: $screen-md-min){
+    @media (min-width: $screen-md-min) {
       margin-bottom: 0;
     }
   }
 
-  &--no-padding{
+  &--no-padding {
     padding-bottom: 0;
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       padding-bottom: 0;
     }
 
-    @media (min-width: $screen-md-min){
+    @media (min-width: $screen-md-min) {
       padding-bottom: 0;
     }
   }
 
-  &--no-shadow{
+  &--no-shadow {
     box-shadow: none;
   }
 }

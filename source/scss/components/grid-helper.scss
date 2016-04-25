@@ -1,33 +1,33 @@
-.center-block{
+.center-block {
   float: none;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-sm-min) {
     float: none;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
-  @media (min-width: $screen-md-min){
+  @media (min-width: $screen-md-min) {
     float: none;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
-  @media (min-width: $screen-lg-min){
+  @media (min-width: $screen-lg-min) {
     float: none;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
 
-.no-padding{
-  padding-left: 0;
+.no-padding {
   padding-right: 0;
+  padding-left: 0;
 }
 
-.no-margin{
-  margin-left: 0;
+.no-margin {
   margin-right: 0;
+  margin-left: 0;
 }

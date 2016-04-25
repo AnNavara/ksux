@@ -4,7 +4,6 @@
   var modal = document.querySelector('.modal');
   var modalHeader = modal.querySelector('.modal__header');
   var modalClose = modal.querySelector('.modal__close');
-  var modalWrapper = modal.querySelector('.modal__wrapper');
   var modalImg = modal.querySelector('img');
 
   function modalShow() {
@@ -23,11 +22,9 @@
     if (modalImg.classList.contains('zoomed') && modalHeader.classList.contains('zoomed')) {
       modalImg.classList.remove('zoomed');
       modalHeader.classList.remove('zoomed');
-      modalWrapper.classList.remove('zoomed');
     } else {
       modalImg.classList.add('zoomed');
       modalHeader.classList.add('zoomed');
-      modalWrapper.classList.add('zoomed');
     }
   }
 

@@ -1,44 +1,44 @@
 $screen-m-mid: 24em;
 $screen-m-large: 26em;
 
-.social{
+.social {
   text-align: center;
 
-  a{
+  a {
     display: inline-block;
-    margin-bottom: 1.8em;
     min-width: 40%;
+    margin-bottom: 1.8em;
     font-size: 15px;
     line-height: $line-height-large;
-    letter-spacing: 0.02em;
     color: $gray-dark;
+    letter-spacing: 0.02em;
 
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
 
-    @media (min-width: $screen-m-large){
+    @media (min-width: $screen-m-large) {
+      min-width: auto;
       margin-right: 1.35em;
       margin-bottom: 1.3em;
-      min-width: auto;
       font-size: 14px;
     }
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       display: inline;
       font-size: $font-size-large;
     }
 
-    &:hover{
+    &:hover {
       color: $gray-dark--lighten;
     }
 
-    &:active{
+    &:active {
       color: $gray-darker;
     }
   }
 
-  @media (min-width: $screen-md-min){
+  @media (min-width: $screen-md-min) {
     text-align: left;
   }
 }

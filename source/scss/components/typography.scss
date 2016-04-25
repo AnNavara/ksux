@@ -1,138 +1,138 @@
-h1{
+h1 {
   margin: 0 0 1.5em 0;
   font-family: $font-family-serif;
   font-size: $font-size-h1;
+  font-weight: normal;
   line-height: 1;
   color: $gray-dark;
-  font-weight: normal;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.08em;
 
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-sm-min) {
     margin: 0 0 50px 0;
   }
 }
 
-h2{
+h2 {
   margin: 1.4em 0 0.6em 0;
   font-family: $font-family-serif;
   font-size: $font-size-h2 * 0.794117;
+  font-weight: normal;
+  hyphens: auto;
   line-height: $line-height-base;
   color: $gray-dark;
-  font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   word-wrap: break-word;
-  hyphens: auto;
 
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-sm-min) {
     margin: 0 0 1.1em 0;
     font-size: $font-size-h2;
   }
 }
 
-h3{
+h3 {
   margin: 1.3em 0 0.7em 0;
   font-family: $font-family-serif;
   font-size: $font-size-h3 * 0.857142;
-  line-height: $line-height-base;
-  color: $gray-dark;
   font-weight: normal;
   hyphens: auto;
+  line-height: $line-height-base;
+  color: $gray-dark;
 
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-sm-min) {
     margin: 1.5em 0 1.4em 0;
     font-size: $font-size-h3;
   }
 }
 
-h4{
+h4 {
   margin: 0 0 1em 0;
   font-family: $font-family-serif;
   font-size: $font-size-h4;
+  font-weight: normal;
   line-height: $line-height-base;
   color: $gray-dark;
-  font-weight: normal;
   letter-spacing: 0.08em;
 }
 
-h5{
+h5 {
   margin: 0 0 1em 0;
   font-family: $font-family-serif;
   font-size: $font-size-h5;
+  font-weight: normal;
   line-height: $line-height-base;
   color: $gray-dark;
-  font-weight: normal;
   letter-spacing: 0.08em;
 }
 
-h6{
+h6 {
   margin: 0 0 1em 0;
   font-family: $font-family-serif;
   font-size: $font-size-h6;
+  font-weight: normal;
   line-height: $line-height-base;
   color: $gray-dark;
-  font-weight: normal;
   letter-spacing: 0.08em;
 }
 
-p{
+p {
   margin: 0 0 1.15em 0;
   font-family: $font-family-serif;
   font-size: $font-size-base;
+  font-weight: normal;
   line-height: $line-height-big;
   color: $gray-dark;
-  font-weight: normal;
 
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-sm-min) {
     font-size: $font-size-large;
   }
 }
 
-span{
+span {
   font-family: $font-family-serif;
   font-size: $font-size-base;
+  font-weight: normal;
   line-height: $line-height-big;
   color: $gray-dark;
-  font-weight: normal;
 
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-sm-min) {
     font-size: $font-size-large;
   }
 }
 
-a{
+a {
   color: $gray-light;
 
   &:hover,
-  &:focus{
+  &:focus {
     color: $gray-dark;
     text-decoration: none;
   }
 
-  &:active{
+  &:active {
     color: $gray-darker;
   }
 
-  &:disabled{
-    opacity: 0.5;
+  &:disabled {
     pointer-events: none;
     cursor: default;
+    opacity: 0.5;
   }
 }
 
-.disabled{
-  opacity: 0.5;
+.disabled {
   pointer-events: none;
   cursor: default;
+  opacity: 0.5;
 }
 
-.lighten{
+.lighten {
   color: #fff;
 }
 
 .text-center,
-.text-align{
+.text-align {
   text-align: center;
 }

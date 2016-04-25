@@ -1,41 +1,41 @@
-.blog{
+.blog {
   padding-top: 35px;
   background-color: #fff;
 
-  @media (min-width: $screen-sm-min){
-    margin-bottom: 70px;
+  @media (min-width: $screen-sm-min) {
     padding-top: 37px;
+    margin-bottom: 70px;
   }
 
-  &__header{
+  &__header {
     padding-right: 20px;
     box-shadow: 0 29px 0 -27px $gray-lightest;
 
-    @media (min-width: $screen-sm-min){
-      margin-bottom: 60px;
-      padding-left: 0;
+    @media (min-width: $screen-sm-min) {
       padding-right: 0;
+      padding-left: 0;
+      margin-bottom: 60px;
     }
 
-    @media (min-width: $screen-md-min){
+    @media (min-width: $screen-md-min) {
       margin-bottom: 77px;
     }
   }
 
-  &__heading{
+  &__heading {
     margin-bottom: 40px;
     font-size: $font-size-blog-heading * 0.5;
     line-height: 1.1;
     text-align: left;
     word-wrap: break-word;
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       margin-bottom: 69px;
       font-size: $font-size-blog-heading;
       word-wrap: normal;
     }
 
-    @media (min-width: $screen-md-min){
+    @media (min-width: $screen-md-min) {
       font-size: $font-size-blog-heading;
     }
   }

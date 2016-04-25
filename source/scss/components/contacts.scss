@@ -1,97 +1,97 @@
 $screen-m-mid: 24em;
 $screen-m-large: 26em;
 
-.contacts{
+.contacts {
   background-color: $white;
 
-  &__text{
+  &__text {
     padding-top: 5em;
     padding-bottom: 4.5em;
     text-align: center;
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       padding-top: 8em;
       padding-bottom: 11em;
     }
 
-    @media (min-width: $screen-md-min){
-      padding-bottom: 102px;
+    @media (min-width: $screen-md-min) {
       padding-top: 80px;
+      padding-bottom: 102px;
       text-align: left;
     }
 
-    @media (min-width: $screen-lg-min){
+    @media (min-width: $screen-lg-min) {
       padding-top: 107px;
     }
   }
 
-  .contacts__mail{
+  .contacts__mail {
     display: block;
     margin-bottom: 0.8em;
     font-family: $font-family-serif;
     font-size: 23px;
-    letter-spacing: 0.08em;
     color: $gray_dark;
     text-transform: uppercase;
+    letter-spacing: 0.08em;
 
-    @media (min-width: $screen-m-mid){
+    @media (min-width: $screen-m-mid) {
       font-size: 28px;
     }
 
-    @media (min-width: $screen-m-large){
+    @media (min-width: $screen-m-large) {
       font-size: 32px;
     }
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       margin-bottom: 10px;
       font-size: 52px;
     }
 
-    >a{
+    > a {
       color: $gray-dark;
 
-      &:hover{
+      &:hover {
         color: $gray-dark--lighten;
       }
 
-      &:active{
+      &:active {
         color: $gray-darker;
       }
     }
   }
 
-  &__tel{
+  &__tel {
     display: block;
     margin-bottom: 6em;
     font-family: $font-family-serif;
     font-size: $font-size-large;
     color: $gray-dark;
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       margin-bottom: 9em;
     }
 
-    @media (min-width: $screen-md-min){
+    @media (min-width: $screen-md-min) {
       margin-bottom: 164px;
     }
 
-    >a{
+    > a {
       color: $gray-dark;
 
-      @media (min-width: $screen-sm-min){
+      @media (min-width: $screen-sm-min) {
       }
 
-      &:hover{
+      &:hover {
         color: $gray-dark--lighten;
       }
 
-      &:active{
+      &:active {
         color: $gray-darker;
       }
     }
   }
 
-  &__headings{
+  &__headings {
     margin-bottom: 32px;
   }
 }

@@ -1,54 +1,54 @@
-footer{
+footer {
   padding-top: 10px;
   padding-bottom: 25px;
 
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-sm-min) {
     padding-top: 20px;
     padding-bottom: 50px;
   }
 
-  @media (min-width: $screen-md-min){
+  @media (min-width: $screen-md-min) {
     padding-top: 45px;
     padding-bottom: 45px;
   }
 }
 
-.contact{
+.contact {
   display: block;
-  margin-left: -3px;
   margin-bottom: 1.24em;
+  margin-left: -3px;
   font-family: $font-family-sans-serif;
   font-size: $font-size-base;
+  font-weight: 400;
   line-height: $line-height-base;
   color: $gray-light;
-  font-weight: 400;
   letter-spacing: 0.001em;
 
-  > a:hover{
+  > a:hover {
     text-decoration: none;
   }
 
-  @media (min-width: $screen-sm-min){
+  @media (min-width: $screen-sm-min) {
     display: inline-block;
     margin-left: 0;
   }
 
-  @media (min-width: $screen-md-min){
-    &--left{
+  @media (min-width: $screen-md-min) {
+    &--left {
       padding-left: 50px;
     }
   }
 
-  &:hover{
+  &:hover {
     color: $gray-dark;
     text-decoration: none;
   }
 }
 
-.copyright{
+.copyright {
   padding-right: 5px;
   font-family: $font-family-sans-serif;
   font-size: $font-size-base;
-  color: $gray-dark;
   font-weight: normal;
+  color: $gray-dark;
 }

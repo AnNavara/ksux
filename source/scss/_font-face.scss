@@ -1,62 +1,49 @@
-//PT SERIF
-@font-face {
-  font-family: 'PT Serif';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local('PT Serif'),
-    local('PTSerif-Regular'),
-    url(https://fonts.gstatic.com/s/ptserif/v8/zjBCKJs0bE-LvM0teIV5VPesZW2xOQ-xsNqO47m55DA.woff) format('woff'), url(https://fonts.gstatic.com/s/ptserif/v8/5hX15RUpPERmeybVlLQEWBTbgVql8nDJpwnrE27mub0.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'PT Serif';
-  font-style: italic;
-  font-weight: 400;
-  src:
-    local('PT Serif'),
-    local('PTSerif-Regular'),
-    url(https://fonts.gstatic.com/s/ptserif/v8/O_WhD9hODL16N4KLHLX7xRsxEYwM7FgeyaSgU71cLG0.woff) format('woff'),
-    url(https://fonts.gstatic.com/s/ptserif/v8/O_WhD9hODL16N4KLHLX7xSEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'PT Serif';
-  font-style: normal;
-  font-weight: 700;
-  src:
-    local('PT Serif Bold'),
-    local('PTSerif-Bold'),
-    url(https://fonts.gstatic.com/s/ptserif/v8/QABk9IxT-LFTJ_dQzv7xpCfE9Gpc2xZQgtwyMvPhThE.woff) format('woff'),  url(https://fonts.gstatic.com/s/ptserif/v8/QABk9IxT-LFTJ_dQzv7xpDTOQ_MqJVwkKsUn0wKzc2I.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'PT Serif';
-  font-style: italic;
-  font-weight: 700;
-  src:
-    local('PT Serif Bold'),
-    local('PTSerif-Bold'),
-    url(https://fonts.gstatic.com/s/ptserif/v8/Foydq9xJp--nfYIx2TBz9fC9omqvv5AHDXkqFUFE8Rk.woff) format('woff'),
-    url(https://fonts.gstatic.com/s/ptserif/v8/Foydq9xJp--nfYIx2TBz9ede9INZm0R8ZMJUtfOsxrw.woff2) format('woff2');
-}
-
-
-//PT SANS
+/* pt-sans-regular - latin_cyrillic */
 @font-face {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  src:
-    local('PT Sans'),
-    local('PTSans-Regular'),
-    url(https://fonts.gstatic.com/s/ptsans/v8/yrzXiAvgeQQdopyG8QSg8Q.woff) format('woff'), url(https://fonts.gstatic.com/s/ptsans/v8/JX7MlXqjSJNjQvI4heMMGvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v8-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
+       url('../fonts/pt-sans-v8-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* pt-sans-700 - latin_cyrillic */
 @font-face {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/kTYfCWJhlldPf5LnG4ZnHBsxEYwM7FgeyaSgU71cLG0.woff) format('woff'),
-  url(https://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+       url('../fonts/pt-sans-v8-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
+       url('../fonts/pt-sans-v8-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-serif-regular - latin_cyrillic */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Serif'), local('PTSerif-Regular'),
+       url('../fonts/pt-serif-v8-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
+       url('../fonts/pt-serif-v8-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-serif-italic - latin_cyrillic */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Serif Italic'), local('PTSerif-Italic'),
+       url('../fonts/pt-serif-v8-latin_cyrillic-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
+       url('../fonts/pt-serif-v8-latin_cyrillic-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-serif-700 - latin_cyrillic */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Serif Bold'), local('PTSerif-Bold'),
+       url('../fonts/pt-serif-v8-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+ */
+       url('../fonts/pt-serif-v8-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

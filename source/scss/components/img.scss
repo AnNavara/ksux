@@ -1,109 +1,110 @@
-.img{
+.img {
   width: 100%;
   height: auto;
 
-  &--space{
+  &--space {
     margin-top: 20px;
     margin-bottom: 25px;
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       margin-top: 30px;
       margin-bottom: 20px;
     }
 
-    @media (min-width: $screen-md-min){
+    @media (min-width: $screen-md-min) {
       margin-top: 40px;
       margin-bottom: 30px;
     }
 
-    @media (min-width: $screen-lg-min){
+    @media (min-width: $screen-lg-min) {
       margin-top: 40px;
       margin-bottom: 80px;
     }
   }
 
-  &-link{
+  &-link {
+    position: relative;
+    z-index: 5;
     display: block;
     margin-top: 30px;
     margin-bottom: 40px;
-    position: relative;
-    z-index: 5;
     overflow: hidden;
 
-    @media (min-width: $screen-sm-min){
+    @media (min-width: $screen-sm-min) {
       margin-top: 56px;
       margin-bottom: 60px;
     }
 
-    @media (min-width: $screen-md-min){
+    @media (min-width: $screen-md-min) {
       margin-top: 56px;
       margin-bottom: 86px;
     }
 
-    &::before{
+    &::before {
       position: absolute;
-      content: "";
-      z-index: 15;
       top: 39%;
       left: 43%;
+      z-index: 15;
       width: 50px;
       height: 50px;
-      @extend %icon-magnifier;
+      content: "";
       background-size: cover;
       opacity: 0;
       transition: opacity 0.2s linear;
 
-      @media (min-width: $screen-sm-min){
+      @extend %icon-magnifier;
+
+      @media (min-width: $screen-sm-min) {
         left: 45%;
         width: 90px;
         height: 90px;
       }
 
-      @media (min-width: $screen-md-min){
+      @media (min-width: $screen-md-min) {
         width: 111px;
         height: 111px;
         background-size: auto;
       }
     }
 
-    &::after{
+    &::after {
       position: absolute;
-      content: "";
-      z-index: 10;
       top: 35%;
       left: 40%;
+      z-index: 10;
       width: 0;
       height: 0;
+      content: "";
       border-radius: 50%;;
 
-      @media (min-width: $screen-sm-min){
+      @media (min-width: $screen-sm-min) {
         top: 45%;
         left: 48%;
       }
     }
 
-    &:hover::before{
+    &:hover::before {
       opacity: 1;
       transition: opacity 0.3s linear;
     }
 
-    &:not(:hover)::before{
+    &:not(:hover)::before {
       opacity: 0;
       transition: opacity 0.2s linear;
     }
 
-    &:hover::after{
+    &:hover::after {
       border: 30px solid rgba(205, 205, 205, 0.3);
-      transform: scale(15,15);
       transition: transform 0.4s ease-in;
+      transform: scale(15,15);
     }
 
-    &:not(:hover)::after{
+    &:not(:hover)::after {
       border: 30px solid rgba(205, 205, 205, 0.3);
-      transform: scale(1,1);
       opacity: 0;
       transition: transform 0.3s ease-out,
-                  opacity 0.3s linear;
+      opacity 0.3s linear;
+      transform: scale(1,1);
     }
   }
 
@@ -112,51 +113,52 @@
   // hidden image
   // with growth
 
-  &-move{
+  &-move {
     display: block;
-    margin: 20px -40px 0;
-    padding: 40px 40px;
     max-height: 130px;
+    padding: 40px 40px;
+    margin: 20px -40px 0;
     overflow: hidden;
     outline: none;
 
-    &:focus{
+    &:focus {
       outline: none;
     }
 
     //Paddings and margins due to inner img shadow
 
-    @media (min-width: $screen-sm-min){
-      margin: 59px -40px 0;
+    @media (min-width: $screen-sm-min) {
       max-height: 360px;
+      margin: 59px -40px 0;
     }
 
-    > img{
+    > img {
       box-shadow: 0 0 40px 1px rgba(36, 41, 46, 0.12);
 
-      @media (min-width: $screen-sm-min){
-        transform: translateY(27px);
+      @media (min-width: $screen-sm-min) {
         transition: transform 0.4s ease;
+        transform: translateY(27px);
+
         backface-visibility: hidden;
       }
     }
 
-    &:hover{
-      >img{
-        @media (min-width: $screen-sm-min){
+    &:hover {
+      > img {
+        @media (min-width: $screen-sm-min) {
           transform: translateY(0);
         }
       }
     }
 
-    &--show{
+    &--show {
       max-height: none;
 
-      @media (min-width: $screen-sm-min){
-        max-height: none
+      @media (min-width: $screen-sm-min) {
+        max-height: none;
       }
 
-      >img{
+      > img {
         transform: none;
       }
     }

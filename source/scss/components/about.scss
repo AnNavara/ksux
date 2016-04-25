@@ -1,44 +1,49 @@
-.about{
+.about {
   padding-bottom: 4em;
   background-color: #fff;
   background-repeat: no-repeat;
 
-  @media (min-width: $screen-sm-min){
-    padding-bottom: 20px;
+  @media (min-width: $screen-sm-min) {
     min-height: 512px;
-    background-image: url('../img/bg__cat.jpg');
+    padding-bottom: 20px;
+    background-image: url("../img/bg__cat.jpg");
     background-position: 320px 60px;
   }
 
-  @media (min-width: $screen-md-min){
+  @media (min-width: $screen-md-min) {
     background-position: 500px 30px;
   }
 
-  @media (min-width: $screen-lg-min){
+  @media (min-width: $screen-lg-min) {
     background-position: bottom right;
   }
 
-  &__text{
-
-    h1{
+  &__text {
+    h1 {
+      top: 0;
       display: block;
+      margin: 0;
       font-family: $font-family-serif;
       font-size: $font-size-h2--mod * 0.72;
       line-height: $line-height-small;
+      text-align: left;
+      text-transform: none;
+      letter-spacing: normal;
 
-      @media (min-width: $screen-sm-min){
+      @media (min-width: $screen-sm-min) {
         display: inline;
         font-size: $font-size-h2--mod;
+        text-transform: none;
       }
     }
 
-    span{
+    span {
       display: block;
       font-family: $font-family-serif;
       font-size: $font-size-h2--mod * 0.72;
       line-height: $line-height-small;
 
-      @media (min-width: $screen-sm-min){
+      @media (min-width: $screen-sm-min) {
         display: inline;
         font-size: $font-size-h2--mod;
       }
