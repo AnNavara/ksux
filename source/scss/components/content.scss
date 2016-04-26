@@ -62,7 +62,7 @@
     margin: 0;
     margin-left: 3px;
     font-family: $font-family-serif;
-    font-size: $font-size-h3;
+    font-size: $font-size-h4;
     font-weight: normal;
     line-height: 1;
     color: #fff;
@@ -75,14 +75,15 @@
 
   &__descr {
     position: absolute;
-    bottom: 14px;
-    left: 28px;
+    bottom: 12px;
+    left: 25px;
     z-index: 15;
     width: 80%;
 
     > span {
       display: block;
       margin-bottom: 10px;
+      font-family: $font-family-sans-serif;
       font-size: $font-size-small;
       line-height: $line-height-base;
       color: $gray-lighten;

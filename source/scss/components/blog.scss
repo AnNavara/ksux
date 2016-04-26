@@ -27,12 +27,10 @@
     font-size: $font-size-blog-heading * 0.5;
     line-height: 1.1;
     text-align: left;
-    word-wrap: break-word;
 
     @media (min-width: $screen-sm-min) {
       margin-bottom: 69px;
       font-size: $font-size-blog-heading;
-      word-wrap: normal;
     }
 
     @media (min-width: $screen-md-min) {

@@ -1,6 +1,7 @@
 .section {
   padding-bottom: 30px;
   margin-bottom: 20px;
+  color: $gray-dark;
   box-shadow: 0 29px 0 -27px $gray-lightest;
 
   @include clearfix();
@@ -22,6 +23,7 @@
   &--dark {
     padding-top: 40px;
     padding-bottom: 60px;
+    color: #fff;
     text-align: center;
     background-color: $gray-darker;
     box-shadow: none;

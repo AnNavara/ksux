@@ -1,10 +1,8 @@
 h1 {
   margin: 0 0 1.5em 0;
-  font-family: $font-family-serif;
   font-size: $font-size-h1;
   font-weight: normal;
   line-height: 1;
-  color: $gray-dark;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -16,15 +14,12 @@ h1 {
 
 h2 {
   margin: 1.4em 0 0.6em 0;
-  font-family: $font-family-serif;
   font-size: $font-size-h2 * 0.794117;
   font-weight: normal;
   hyphens: auto;
   line-height: $line-height-base;
-  color: $gray-dark;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  word-wrap: break-word;
 
   @media (min-width: $screen-sm-min) {
     margin: 0 0 1.1em 0;
@@ -34,12 +29,10 @@ h2 {
 
 h3 {
   margin: 1.3em 0 0.7em 0;
-  font-family: $font-family-serif;
   font-size: $font-size-h3 * 0.857142;
   font-weight: normal;
   hyphens: auto;
   line-height: $line-height-base;
-  color: $gray-dark;
 
   @media (min-width: $screen-sm-min) {
     margin: 1.5em 0 1.4em 0;
@@ -49,41 +42,33 @@ h3 {
 
 h4 {
   margin: 0 0 1em 0;
-  font-family: $font-family-serif;
   font-size: $font-size-h4;
   font-weight: normal;
   line-height: $line-height-base;
-  color: $gray-dark;
   letter-spacing: 0.08em;
 }
 
 h5 {
   margin: 0 0 1em 0;
-  font-family: $font-family-serif;
   font-size: $font-size-h5;
   font-weight: normal;
   line-height: $line-height-base;
-  color: $gray-dark;
   letter-spacing: 0.08em;
 }
 
 h6 {
   margin: 0 0 1em 0;
-  font-family: $font-family-serif;
   font-size: $font-size-h6;
   font-weight: normal;
   line-height: $line-height-base;
-  color: $gray-dark;
   letter-spacing: 0.08em;
 }
 
 p {
   margin: 0 0 1.15em 0;
-  font-family: $font-family-serif;
   font-size: $font-size-base;
   font-weight: normal;
   line-height: $line-height-big;
-  color: $gray-dark;
 
   @media (min-width: $screen-sm-min) {
     font-size: $font-size-large;
@@ -91,11 +76,9 @@ p {
 }
 
 span {
-  font-family: $font-family-serif;
   font-size: $font-size-base;
   font-weight: normal;
   line-height: $line-height-big;
-  color: $gray-dark;
 
   @media (min-width: $screen-sm-min) {
     font-size: $font-size-large;
@@ -109,6 +92,10 @@ a {
   &:focus {
     color: $gray-dark;
     text-decoration: none;
+  }
+
+  &:focus {
+    outline: visible;
   }
 
   &:active {
@@ -128,11 +115,6 @@ a {
   opacity: 0.5;
 }
 
-.lighten {
-  color: #fff;
-}
-
-.text-center,
-.text-align {
+.text-center{
   text-align: center;
 }

@@ -21,31 +21,34 @@
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
   background-color: #fff;
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.fonts-loaded {
+  font-family: $font-family-base;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
-  font-family: $font-family-base;
+  font-family: $font-family-base--cut;
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $text-color;
   background-color: $bg-wrapper;
 
-  // Border % min-height changed from default
-  // Bootstrap
-  // !
-
-  @media(min-width: $screen-md-min){
+  @media(min-width: $screen-md-min) {
+    display: flex;
+    flex-direction: column;
     border: 20px solid $body-bg;
   }
 }
 
-main{
-  flex-grow: 1;
+main {
+  @media(min-width: $screen-md-min) {
+    flex-grow: 1;
+  }
 }
 
 // Reset fonts for relevant elements
@@ -112,7 +115,7 @@ img {
 // Horizontal rules
 
 hr {
-  margin-top:    $line-height-computed;
+  margin-top: $line-height-computed;
   margin-bottom: $line-height-computed;
   border: 0;
   border-top: 1px solid $hr-border;
@@ -127,8 +130,8 @@ hr {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
   padding: 0;
+  margin: -1px;
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;

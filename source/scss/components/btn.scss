@@ -1,11 +1,12 @@
 .btn {
   display: inline-block;
   padding: 0.7058em 1.9411em;
+  margin-bottom: 1.6em;
   font-family: $font-family-sans-serif;
-  font-size: $font-size-h4 * 0.8888;
+  font-size: $font-size-h5 * 0.8888;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
+  color: currentColor;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -14,19 +15,20 @@
 
   @media (min-width: $screen-sm-min) {
     padding: 12px 35px;
-    font-size: $font-size-h4;
+    font-size: $font-size-h5;
   }
 
-  &:hover {
-    color: #fff;
-    border-color: #fff;
+  &:hover, &:focus {
+    color: currentColor;
+    border-color: currentColor;
   }
 
   &--big {
     padding: 1.1764em 1em;
     margin-top: 25px;
+    margin-bottom: 2em;
     font-size: $font-size-large * 0.8823;
-    color: $gray-dark;
+    color: currentColor;
     text-transform: uppercase;
     letter-spacing: 0.11em;
 
@@ -45,9 +47,9 @@
       text-transform: lowercase;
     }
 
-    &:hover {
-      color: $gray-dark;
-      border-color: $gray-dark;
+    &:hover, &:focus {
+      color: currentColor;
+      border-color: currentColor;
     }
   }
 }

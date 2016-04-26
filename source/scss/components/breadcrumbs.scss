@@ -1,5 +1,6 @@
 .breadcrumbs {
   display: block;
+  font-family: $font-family-sans-serif;
   margin-bottom: 5px;
 
   &__link {
@@ -7,7 +8,6 @@
     display: inline-block;
     padding: 5px 0;
     margin-right: 24px;
-    font-family: $font-family-base;
     font-size: $font-size-large * 0.9;
     line-height: 1;
     color: $gray-lighten;
