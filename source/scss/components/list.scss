@@ -2,7 +2,9 @@
   text-align: left;
 
   &--pad {
-    padding-left: 26px;
+    @media (min-width: $screen-md-min) {
+      padding-left: 26px;
+    }
   }
 
   &__heading {
