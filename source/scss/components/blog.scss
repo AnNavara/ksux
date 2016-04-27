@@ -4,6 +4,11 @@
 
   @media (min-width: $screen-sm-min) {
     padding-top: 37px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding-top: 37px;
     margin-bottom: 70px;
   }
 

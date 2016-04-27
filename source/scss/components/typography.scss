@@ -14,9 +14,8 @@ h1 {
 
 h2 {
   margin: 1.4em 0 0.6em 0;
-  font-size: $font-size-h2 * 0.794117;
+  font-size: $font-size-h2 * 0.764705882;
   font-weight: normal;
-  hyphens: auto;
   line-height: $line-height-base;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -31,7 +30,6 @@ h3 {
   margin: 1.3em 0 0.7em 0;
   font-size: $font-size-h3 * 0.857142;
   font-weight: normal;
-  hyphens: auto;
   line-height: $line-height-base;
 
   @media (min-width: $screen-sm-min) {
@@ -115,6 +113,15 @@ a {
   opacity: 0.5;
 }
 
-.text-center{
+.text-center {
   text-align: center;
+}
+
+.word-wrap {
+  hyphens: auto;
+  word-wrap: break-word;
+
+  @media (min-width: $screen-sm-min) {
+    word-wrap: normal;
+  }
 }
